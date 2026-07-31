@@ -1,0 +1,29 @@
+name: Link Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 6 * * 1'  # every Monday 06:00 UTC
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check links in README
+        uses: lycheeverse/lychee-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          args: >
+            --config lychee.toml
+            --accept 200,201,202,203,204,206,301,302,303,307,308,429
+            --retry-wait-time 10
+            --max-retries 3
+            --timeout 20
+            --no-progress
+            README.md
+          fail: true
