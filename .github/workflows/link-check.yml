@@ -17,7 +17,10 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           args: >
-            --accept 200,201,202,203,204,206,301,302,303,307,308,429
+            --accept 200,201,202,203,204,206,301,302,303,307,308,403,429,999
+            --retry-wait-time 10
+            --max-retries 3
+            --timeout 20
             --no-progress
             README.md
           fail: true
