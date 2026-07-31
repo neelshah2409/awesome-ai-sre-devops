@@ -463,7 +463,7 @@ Model Context Protocol servers give AI assistants (Claude, ChatGPT, Cursor) dire
 - **[Drizzle](https://github.com/drizzle-team/drizzle-orm)** — *Open-source.* TypeScript ORM with declarative, AI-friendly type-safe migrations.
 - **[Metabase](https://github.com/metabase/metabase)** — *Open-source.* BI platform with natural-language querying for non-technical users.
 - **[Neon](https://github.com/neondatabase/neon)** — *Open-source core / Commercial.* Serverless Postgres with branching and AI-powered query optimization.
-- **[OtterTune](https://ottertune.com/)** — *Commercial.* Automatically tunes Postgres/MySQL/MariaDB configuration for performance.
+- **[OtterTune](https://github.com/ottertune/)** — *Commercial.* Automatically tunes Postgres/MySQL/MariaDB configuration for performance.
 - **[pganalyze](https://pganalyze.com/)** — *Commercial.* Postgres monitoring with AI-powered query recommendations and index advisor.
 - **[PlanetScale](https://planetscale.com/)** — *Commercial.* Serverless MySQL with AI-powered schema change management and non-blocking deploys.
 - **[SchemaHero](https://github.com/schemahero/schemahero)** — *Open-source.* Kubernetes-native declarative schema migrations.
