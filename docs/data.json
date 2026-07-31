@@ -565,6 +565,12 @@
       "name": "AI Incident Response and AI SRE Agents",
       "tools": [
         {
+          "name": "Aiden for SRE",
+          "url": "https://stackgen.com/product/aiden-for-sre",
+          "type": "Commercial",
+          "description": "Aiden that acts autonomously on recurring incidents and works complex ones alongside your team through to resolution \u2014 policy-bound and fully auditable."
+        },
+        {
           "name": "BigPanda",
           "url": "https://www.bigpanda.io/",
           "type": "Commercial",
@@ -2537,6 +2543,6 @@
       ]
     }
   ],
-  "total_tools": 406,
+  "total_tools": 407,
   "total_categories": 20
 }
