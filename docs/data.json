@@ -1879,7 +1879,7 @@
         },
         {
           "name": "Claude Agent SDK",
-          "url": "https://docs.claude.com/en/docs/agents",
+          "url": "https://platform.claude.com/docs/en/agent-sdk/overview",
           "type": "Commercial (Anthropic)",
           "description": "Framework for agentic apps with tool orchestration and guardrails."
         },
