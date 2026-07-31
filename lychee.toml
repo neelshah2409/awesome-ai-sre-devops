@@ -1,0 +1,21 @@
+# Config for the lychee link checker (used by .github/workflows/link-check.yml)
+#
+# These domains are excluded from automated checking, NOT because the links
+# are dead, but because their WAF/bot-protection returns non-2xx codes (402,
+# 403, 503, TLS resets, timeouts) to any non-browser client, including CI
+# runners. Verified manually working as of the date each was added — if one
+# of these actually goes dead, remove it from this list so the checker
+# catches future rot on it, then fix the entry.
+exclude = [
+  "https://www.moogsoft.com/",
+  "https://www.kubiya.ai/",
+  "https://www.resourcely.io/",
+  "https://shoreline.io/",
+  "https://www.tryparity.com/",
+]
+
+# GitHub gets hit dozens of times per run (repo links + MCP servers).
+# Unauthenticated requests are rate-limited hard and can come back as a
+# false 404 instead of 429. The workflow passes GITHUB_TOKEN via the
+# `token` input so lychee authenticates and gets the much higher
+# authenticated rate limit instead.
