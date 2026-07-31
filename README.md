@@ -8,7 +8,7 @@
 
 > A living, filterable directory of AI tools for DevOps, Site Reliability Engineering, and Platform Engineering — with a browsable site, weekly automated discovery, and detailed, decision-useful descriptions (not just a link dump).
 
-**🔍 [Browse the searchable site →](https://YOUR_USERNAME.github.io/awesome-ai-sre-devops/)**
+**🔍 [Browse the searchable site →](https://neelshah2409.github.io/awesome-ai-sre-devops/)**
 
 **407 tools** across **20 tool categories** — updated continuously via automated weekly discovery (see [How This Stays Updated](#how-this-stays-updated)). If this saved you time, a star helps more engineers find it. 🌟
 
