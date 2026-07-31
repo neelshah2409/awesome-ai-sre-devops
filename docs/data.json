@@ -2189,7 +2189,7 @@
         },
         {
           "name": "OtterTune",
-          "url": "https://ottertune.com/",
+          "url": "https://github.com/ottertune/",
           "type": "Commercial",
           "description": "Automatically tunes Postgres/MySQL/MariaDB configuration for performance."
         },
