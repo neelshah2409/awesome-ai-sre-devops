@@ -1,0 +1,2548 @@
+{
+  "categories": [
+    {
+      "name": "AI Coding Agents for Infrastructure",
+      "tools": [
+        {
+          "name": "Aider",
+          "url": "https://github.com/aider-ai/aider",
+          "type": "Open-source",
+          "description": "Terminal-based AI pair programming that works with any LLM and commits each change to git automatically, well suited to infrastructure repos where you want an auditable diff per change."
+        },
+        {
+          "name": "Amazon Q Developer",
+          "url": "https://aws.amazon.com/q/developer/",
+          "type": "Commercial (AWS)",
+          "description": "AWS-native assistant with deep CloudFormation and CDK awareness, best if your infrastructure is already AWS-centric."
+        },
+        {
+          "name": "Augment Code",
+          "url": "https://www.augmentcode.com/",
+          "type": "Commercial",
+          "description": "Enterprise coding platform built for deep multi-repo context, useful when infra code is spread across many services rather than one monorepo."
+        },
+        {
+          "name": "Bolt",
+          "url": "https://bolt.new/",
+          "type": "Commercial (StackBlitz)",
+          "description": "Browser-based AI app builder that generates and deploys full-stack apps in-browser, more useful for prototyping dashboards than core infra work."
+        },
+        {
+          "name": "Clanker",
+          "url": "https://github.com/bgdnvk/clanker",
+          "type": "Open-source",
+          "description": "Autonomous CLI agent for systems engineering across AWS, GCP, and Cloudflare without needing a full IDE."
+        },
+        {
+          "name": "Claude Code",
+          "url": "https://docs.claude.com/en/docs/claude-code",
+          "type": "Commercial (Anthropic)",
+          "description": "Agentic terminal coding tool strong at large multi-file Terraform refactors and debugging across an entire infrastructure repo at once."
+        },
+        {
+          "name": "Cline",
+          "url": "https://github.com/cline/cline",
+          "type": "Open-source",
+          "description": "Autonomous VS Code agent that can run terminal commands and edit files directly, good for teams wanting an open, extensible agent inside their existing editor."
+        },
+        {
+          "name": "Codex",
+          "url": "https://openai.com/index/openai-codex/",
+          "type": "Commercial (OpenAI)",
+          "description": "Cloud-sandboxed autonomous coding agent that's strong at generating IaC from a plain-language description of the desired end state."
+        },
+        {
+          "name": "Continue",
+          "url": "https://github.com/continuedev/continue",
+          "type": "Open-source",
+          "description": "Editor-agnostic AI assistant for VS Code and JetBrains that supports local models, a good fit for air-gapped or compliance-sensitive infra work."
+        },
+        {
+          "name": "Cursor",
+          "url": "https://cursor.com",
+          "type": "Commercial",
+          "description": "AI-first IDE with inline multi-file editing, popular for fast iterative Terraform/YAML work."
+        },
+        {
+          "name": "Devin",
+          "url": "https://devin.ai/",
+          "type": "Commercial (Cognition)",
+          "description": "Fully autonomous software engineer that can take an infra task from planning through deployment with minimal supervision."
+        },
+        {
+          "name": "Gemini Code Assist",
+          "url": "https://cloud.google.com/gemini/docs/codeassist/overview",
+          "type": "Commercial (Google)",
+          "description": "Google Cloud's coding assistant with native GCP awareness, the natural pick for GCP-heavy shops."
+        },
+        {
+          "name": "GitHub Copilot",
+          "url": "https://github.com/features/copilot",
+          "type": "Commercial",
+          "description": "The most widely deployed AI pair programmer, with Copilot Workspace extending it to multi-file infra changes."
+        },
+        {
+          "name": "JetBrains AI",
+          "url": "https://www.jetbrains.com/ai/",
+          "type": "Commercial",
+          "description": "Built into IntelliJ-based IDEs, context-aware completions for teams already standardized on JetBrains tooling."
+        },
+        {
+          "name": "Lovable",
+          "url": "https://lovable.dev/",
+          "type": "Commercial",
+          "description": "Full-stack app builder with one-click deploy, useful for spinning up internal tools and dashboards quickly."
+        },
+        {
+          "name": "Crush",
+          "url": "https://github.com/charmbracelet/crush",
+          "type": "Open-source (Charm)",
+          "description": "Terminal coding agent supporting many model providers without losing session context between them."
+        },
+        {
+          "name": "Factory AI",
+          "url": "https://factory.ai/",
+          "type": "Commercial",
+          "description": "Enterprise agent platform built for large codebases with local execution, web search, and MCP access baked in."
+        },
+        {
+          "name": "OpenCode",
+          "url": "https://github.com/opencode-ai/opencode",
+          "type": "Open-source",
+          "description": "Go-based terminal agent with 140k+ stars supporting 75+ models across Claude, OpenAI, Gemini, and local providers."
+        },
+        {
+          "name": "OpenHands",
+          "url": "https://github.com/OpenHands/OpenHands",
+          "type": "Open-source (MIT)",
+          "description": "Fully open autonomous software engineering platform with a 77.6% SWEBench score, a solid pick if you need to self-host rather than depend on a vendor."
+        },
+        {
+          "name": "Qwen Code",
+          "url": "https://github.com/QwenLM/Qwen3-Coder",
+          "type": "Open-source (Alibaba)",
+          "description": "CLI agent built around the Qwen3-Coder models, a strong free option for teams comfortable outside the OpenAI/Anthropic ecosystem."
+        },
+        {
+          "name": "Replit Agent",
+          "url": "https://replit.com/ai",
+          "type": "Commercial",
+          "description": "Builds and deploys full-stack apps from natural language, most useful for quickly standing up infra dashboards or internal tools."
+        },
+        {
+          "name": "Roo Code",
+          "url": "https://github.com/RooCodeInc/Roo-Code",
+          "type": "Open-source",
+          "description": "VS Code agent forked from Cline with SOC 2 compliance features, aimed at regulated enterprise teams."
+        },
+        {
+          "name": "Trae",
+          "url": "https://www.trae.ai/",
+          "type": "Commercial (ByteDance), free tier",
+          "description": "AI-first IDE with built-in MCP support and generous free usage."
+        },
+        {
+          "name": "Sourcegraph Cody",
+          "url": "https://sourcegraph.com/cody",
+          "type": "Commercial",
+          "description": "Full-codebase-context assistant, particularly strong for navigating large monorepos with shared infra modules."
+        },
+        {
+          "name": "Tabnine",
+          "url": "https://www.tabnine.com/",
+          "type": "Commercial",
+          "description": "Code completion that can run fully locally, aimed at teams with strict data-privacy requirements around infra code."
+        },
+        {
+          "name": "Windsurf",
+          "url": "https://codeium.com/windsurf",
+          "type": "Commercial (Codeium)",
+          "description": "AI IDE with an agentic \"Cascade\" mode for multi-step infra tasks."
+        },
+        {
+          "name": "Void",
+          "url": "https://voideditor.com/",
+          "type": "Open-source",
+          "description": "VS Code fork supporting local and remote LLMs for teams wanting a privacy-first, fully open editor."
+        },
+        {
+          "name": "Gemini CLI",
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "type": "Open-source, free tier",
+          "description": "Google's terminal agent with a 1,000 requests/day free allowance and native MCP support."
+        },
+        {
+          "name": "Goose",
+          "url": "https://github.com/block/goose",
+          "type": "Open-source (Block), Apache 2.0",
+          "description": "Rust-based autonomous agent that installs, edits, and tests using any LLM via MCP."
+        },
+        {
+          "name": "Kiro",
+          "url": "https://kiro.dev/",
+          "type": "Commercial (AWS)",
+          "description": "Spec-driven agentic IDE that produces reproducible infra code from structured requirements and design docs rather than freeform prompts."
+        },
+        {
+          "name": "Zed AI",
+          "url": "https://zed.dev/",
+          "type": "Commercial",
+          "description": "High-performance editor with built-in assistant and terminal integration."
+        },
+        {
+          "name": "aiac",
+          "url": "https://github.com/gofireflyio/aiac",
+          "type": "Open-source (Firefly)",
+          "description": "CLI generator for Terraform, Pulumi, Helm, CloudFormation, and Dockerfiles from natural language, supports OpenAI, Bedrock, and Ollama."
+        },
+        {
+          "name": "JetBrains Junie",
+          "url": "https://www.jetbrains.com/junie/",
+          "type": "Commercial",
+          "description": "Standalone, LLM-agnostic coding agent usable from terminal, IDE, or CI/CD."
+        },
+        {
+          "name": "Kilo Code",
+          "url": "https://github.com/Kilo-Org/kilocode",
+          "type": "Open-source (MIT)",
+          "description": "Agentic platform across VS Code/JetBrains/CLI with 500+ models at zero markup and a persistent memory bank for long-running projects."
+        },
+        {
+          "name": "Plandex",
+          "url": "https://github.com/plandex-ai/plandex",
+          "type": "Open-source",
+          "description": "Plan-first terminal agent with a 2M-token context and cumulative-diff sandbox, built for large multi-file IaC changes."
+        },
+        {
+          "name": "Mistral Vibe",
+          "url": "https://github.com/mistralai/mistral-vibe",
+          "type": "Open-source (Apache 2.0)",
+          "description": "CLI agent with explicit on-prem/VPC deployment support, aimed at regulated DevOps teams."
+        }
+      ]
+    },
+    {
+      "name": "AI-Powered Kubernetes",
+      "tools": [
+        {
+          "name": "Glasskube",
+          "url": "https://github.com/glasskube/glasskube",
+          "type": "Open-source",
+          "description": "Kubernetes package manager with AI-assisted package discovery and dependency resolution."
+        },
+        {
+          "name": "Headlamp",
+          "url": "https://github.com/headlamp-k8s/headlamp",
+          "type": "Open-source",
+          "description": "Extensible Kubernetes web UI with a plugin architecture supporting AI-powered visualization."
+        },
+        {
+          "name": "K8sGPT",
+          "url": "https://github.com/k8sgpt-ai/k8sgpt",
+          "type": "Open-source (CNCF Sandbox)",
+          "description": "See Tool of the Month above."
+        },
+        {
+          "name": "Kagent",
+          "url": "https://github.com/kagent-dev/kagent",
+          "type": "Open-source (CNCF Sandbox)",
+          "description": "Framework for running AI agents natively inside a Kubernetes cluster."
+        },
+        {
+          "name": "KAITO",
+          "url": "https://github.com/kaito-project/kaito",
+          "type": "Open-source (CNCF Sandbox)",
+          "description": "Kubernetes AI Toolchain Operator that simplifies LLM inference and fine-tuning on clusters."
+        },
+        {
+          "name": "Karpenter",
+          "url": "https://github.com/kubernetes-sigs/karpenter",
+          "type": "Open-source",
+          "description": "Node autoscaler using intelligent bin-packing and just-in-time provisioning to cut cluster cost."
+        },
+        {
+          "name": "KServe",
+          "url": "https://github.com/kserve/kserve",
+          "type": "Open-source",
+          "description": "Standardized distributed inference platform for multi-framework model serving with autoscaling and canary rollouts."
+        },
+        {
+          "name": "KubeStellar Console",
+          "url": "https://github.com/kubestellar/console",
+          "type": "Open-source (CNCF Sandbox)",
+          "description": "Multi-cluster dashboard with an AI natural-language layer for edge and cloud cluster management."
+        },
+        {
+          "name": "Komodor",
+          "url": "https://komodor.com/",
+          "type": "Commercial",
+          "description": "Troubleshooting platform focused on change-tracking \u2014 \"what changed right before this broke\" \u2014 with AI root cause analysis."
+        },
+        {
+          "name": "kubectl-ai",
+          "url": "https://github.com/GoogleCloudPlatform/kubectl-ai",
+          "type": "Open-source (Google Cloud)",
+          "description": "kubectl plugin generating and applying manifests from natural language."
+        },
+        {
+          "name": "Kubernetes ChatGPT Bot",
+          "url": "https://github.com/robusta-dev/kubernetes-chatgpt-bot",
+          "type": "Open-source",
+          "description": "Slack-integrated ChatGPT bot for cluster troubleshooting notifications."
+        },
+        {
+          "name": "Kubeflow",
+          "url": "https://github.com/kubeflow/kubeflow",
+          "type": "Open-source (CNCF incubating)",
+          "description": "Full ML platform for Kubernetes: training, serving, pipelines, notebooks."
+        },
+        {
+          "name": "Kubescape",
+          "url": "https://github.com/kubescape/kubescape",
+          "type": "Open-source (CNCF incubating)",
+          "description": "Security platform with runtime threat detection, SBOMs, and eBPF monitoring."
+        },
+        {
+          "name": "Kubeshark",
+          "url": "https://github.com/kubeshark/kubeshark",
+          "type": "Open-source",
+          "description": "API traffic analyzer giving real-time cluster network visibility, useful as a data source for AI anomaly detection."
+        },
+        {
+          "name": "Robusta",
+          "url": "https://github.com/robusta-dev/robusta",
+          "type": "Open-source core / Commercial",
+          "description": "Monitoring and troubleshooting with automated playbooks that react to cluster events, not just alert on them."
+        },
+        {
+          "name": "ValidKube",
+          "url": "https://github.com/komodorio/validkube",
+          "type": "Open-source",
+          "description": "One-stop tool to validate, clean, and secure Kubernetes manifests."
+        },
+        {
+          "name": "k8m",
+          "url": "https://github.com/weibaohui/k8m",
+          "type": "Open-source",
+          "description": "Lightweight single-binary AI dashboard with multi-cluster support."
+        },
+        {
+          "name": "KubeAI",
+          "url": "https://github.com/kubeai-project/kubeai",
+          "type": "Open-source",
+          "description": "Inference operator for serving LLMs, embeddings, and speech models with zero external dependencies."
+        },
+        {
+          "name": "Kubewall",
+          "url": "https://github.com/kubewall/kubewall",
+          "type": "Open-source",
+          "description": "Single-binary dashboard with multi-cluster support and pluggable AI model backends."
+        },
+        {
+          "name": "vCluster",
+          "url": "https://github.com/loft-sh/vcluster",
+          "type": "Open-source",
+          "description": "Virtual Kubernetes clusters for isolated dev/test, including AI workload experimentation."
+        },
+        {
+          "name": "KAI Scheduler",
+          "url": "https://github.com/NVIDIA/KAI-Scheduler",
+          "type": "Open-source (CNCF Sandbox, NVIDIA)",
+          "description": "GPU-native scheduler with topology-aware and gang scheduling for AI workloads."
+        },
+        {
+          "name": "llm-d",
+          "url": "https://github.com/llm-d/llm-d",
+          "type": "Open-source (CNCF Sandbox)",
+          "description": "Distributed LLM inference framework for Kubernetes from Red Hat, IBM, and Google with disaggregated serving."
+        },
+        {
+          "name": "NVIDIA AI Cluster Runtime",
+          "url": "https://github.com/NVIDIA/aicr",
+          "type": "Open-source (alpha, NVIDIA)",
+          "description": "Cluster runtime with a dedicated CLI and validated recipes for training/inference on H100/Blackwell hardware."
+        },
+        {
+          "name": "Sedai",
+          "url": "https://sedai.io/",
+          "type": "Commercial",
+          "description": "Reinforcement-learning-driven autonomous optimization for scaling and remediation, offered in copilot or full-autopilot mode."
+        },
+        {
+          "name": "Velero",
+          "url": "https://github.com/vmware-tanzu/velero",
+          "type": "Open-source (CNCF Sandbox)",
+          "description": "Backup, disaster recovery, and migration for Kubernetes with AI-assisted scheduling."
+        },
+        {
+          "name": "Causely",
+          "url": "https://www.causely.ai/",
+          "type": "Commercial",
+          "description": "Causal-AI diagnosis platform with an MCP server, claims a 60% cut in agent token use versus general coding agents on the same diagnostic task."
+        },
+        {
+          "name": "Parity",
+          "url": "https://www.tryparity.com/",
+          "type": "Commercial (YC)",
+          "description": "AI SRE for on-call Kubernetes engineers that investigates and runs runbooks before a human is paged."
+        },
+        {
+          "name": "Azure SRE Agent",
+          "url": "https://azure.microsoft.com/en-us/products/sre-agent",
+          "type": "Commercial (Microsoft)",
+          "description": "GA AI ops teammate for AKS that investigates and, with approval, executes remediation."
+        },
+        {
+          "name": "NVIDIA Grove",
+          "url": "https://github.com/ai-dynamo/grove",
+          "type": "Open-source (NVIDIA)",
+          "description": "Kubernetes API for orchestrating multi-node AI inference with hierarchical gang scheduling."
+        },
+        {
+          "name": "Agent Sandbox",
+          "url": "https://github.com/kubernetes-sigs/agent-sandbox",
+          "type": "Open-source (K8s SIG Apps)",
+          "description": "Sandbox CRD for isolated stateful AI-agent workloads via gVisor/Kata."
+        },
+        {
+          "name": "Microsoft Agent Governance Toolkit",
+          "url": "https://github.com/microsoft/agent-governance-toolkit",
+          "type": "Open-source",
+          "description": "Sidecar policy engine enforcing OWASP agentic-AI risk controls on AKS."
+        },
+        {
+          "name": "KubeCopilot Core",
+          "url": "https://github.com/kubecopilot/kubecopilot-core",
+          "type": "Open-source",
+          "description": "Operator deploying an in-cluster AI agent controlled via CRDs, engine-agnostic across model providers."
+        },
+        {
+          "name": "kube-agent",
+          "url": "https://github.com/feiskyer/kube-agent",
+          "type": "Open-source",
+          "description": "Autonomous agent that plans and executes multi-step cluster operations, not just chat-based diagnostics."
+        },
+        {
+          "name": "LLMKube",
+          "url": "https://github.com/defilantech/llmkube",
+          "type": "Open-source",
+          "description": "Operator for local LLM inference on Kubernetes via llama.cpp/vLLM/TGI, aimed at air-gapped deployments."
+        },
+        {
+          "name": "OpenSRE",
+          "url": "https://github.com/Tracer-Cloud/opensre",
+          "type": "Open-source",
+          "description": "Toolkit and eval environment for building AI SRE agents across Kubernetes, EC2, Lambda, ECS, and Flink."
+        }
+      ]
+    },
+    {
+      "name": "AI-Powered Terraform and IaC",
+      "tools": [
+        {
+          "name": "Atmos",
+          "url": "https://github.com/cloudposse/atmos",
+          "type": "Open-source",
+          "description": "Framework for managing Terraform at scale with AI-assisted component discovery."
+        },
+        {
+          "name": "Brainboard",
+          "url": "https://www.brainboard.co/",
+          "type": "Commercial",
+          "description": "Visual Terraform designer that generates architecture from diagrams."
+        },
+        {
+          "name": "Env0",
+          "url": "https://www.env0.com/",
+          "type": "Commercial",
+          "description": "Self-service IaC platform with AI-assisted policy enforcement and drift detection."
+        },
+        {
+          "name": "Firefly",
+          "url": "https://www.firefly.ai/",
+          "type": "Commercial",
+          "description": "Detects drift and auto-generates Terraform from existing unmanaged cloud resources."
+        },
+        {
+          "name": "Infracost",
+          "url": "https://github.com/infracost/infracost",
+          "type": "Open-source",
+          "description": "Adds cloud cost estimates directly to Terraform pull requests, covering 1,100+ resource types."
+        },
+        {
+          "name": "OpenTofu",
+          "url": "https://github.com/opentofu/opentofu",
+          "type": "Open-source (Linux Foundation)",
+          "description": "Community-governed Terraform fork, the foundation many AI IaC tools now build on."
+        },
+        {
+          "name": "Pulumi AI",
+          "url": "https://www.pulumi.com/ai/",
+          "type": "Commercial",
+          "description": "Generates Pulumi programs across AWS/Azure/GCP/Kubernetes from natural language."
+        },
+        {
+          "name": "Spacelift AI",
+          "url": "https://spacelift.io/",
+          "type": "Commercial",
+          "description": "AI-enhanced IaC management with drift detection and automated remediation."
+        },
+        {
+          "name": "Terrascan",
+          "url": "https://github.com/tenable/terrascan",
+          "type": "Open-source",
+          "description": "Static analyzer detecting compliance and security violations across Terraform, Kubernetes, and Helm."
+        },
+        {
+          "name": "Terramate",
+          "url": "https://github.com/terramate-io/terramate",
+          "type": "Open-source",
+          "description": "Orchestration and code generation for complex multi-stack Terraform."
+        },
+        {
+          "name": "tfswitch",
+          "url": "https://github.com/warrensbox/terraform-switcher",
+          "type": "Open-source",
+          "description": "CLI for switching between Terraform versions across multi-version pipelines."
+        },
+        {
+          "name": "ControlMonkey",
+          "url": "https://controlmonkey.io/",
+          "type": "Commercial",
+          "description": "Governance platform with AI-powered drift remediation and auto-generated IaC from existing resources."
+        },
+        {
+          "name": "Terracotta AI",
+          "url": "https://tryterracotta.com/",
+          "type": "Commercial (YC)",
+          "description": "AI PR reviewer for Terraform/OpenTofu/CDK-TF covering plan analysis, IAM security, and cost impact."
+        },
+        {
+          "name": "Resourcely",
+          "url": "https://www.resourcely.io/",
+          "type": "Commercial",
+          "description": "Guardrails platform with reusable blueprints and a policy language enforced at PR time."
+        },
+        {
+          "name": "Terrateam",
+          "url": "https://github.com/terrateamio/terrateam",
+          "type": "Open-source (MPL-2.0)",
+          "description": "GitOps IaC orchestration across Terraform/OpenTofu/CDKTF/Pulumi with an OPA policy engine."
+        },
+        {
+          "name": "Pulumi Neo",
+          "url": "https://www.pulumi.com/product/neo/",
+          "type": "Commercial",
+          "description": "Agentic platform-engineer product that provisions and governs multi-cloud IaC end to end."
+        },
+        {
+          "name": "HashiCorp Project Infragraph",
+          "url": "https://developer.hashicorp.com/hcp/docs/infragraph",
+          "type": "Commercial (HashiCorp)",
+          "description": "Real-time infra knowledge graph powering agentic reasoning over Terraform state and cloud APIs."
+        },
+        {
+          "name": "HashiCorp Agent Skills",
+          "url": "https://www.hashicorp.com/en/blog/introducing-hashicorp-agent-skills",
+          "type": "Open-source",
+          "description": "Official Claude Code Skills for generating and refactoring Terraform/Packer using HashiCorp best practices."
+        },
+        {
+          "name": "Overmind",
+          "url": "https://github.com/overmindtech",
+          "type": "Open-source core / Commercial",
+          "description": "Blast-radius risk analysis that discovers unmanaged AWS resources and converts them to Terraform."
+        },
+        {
+          "name": "Saturnhead AI",
+          "url": "https://spacelift.io/blog/introducing-saturnhead-ai",
+          "type": "Commercial (Spacelift)",
+          "description": "Auto-explains failed Terraform run logs across init/plan/apply in plain language."
+        },
+        {
+          "name": "Quali Torque",
+          "url": "https://www.quali.com/agentic-ai/",
+          "type": "Commercial",
+          "description": "Agentic control plane with modular agents for blueprints, cost modeling, and drift remediation."
+        }
+      ]
+    },
+    {
+      "name": "AI Incident Response and AI SRE Agents",
+      "tools": [
+        {
+          "name": "BigPanda",
+          "url": "https://www.bigpanda.io/",
+          "type": "Commercial",
+          "description": "AIOps event correlation and automated root cause analysis across hybrid environments."
+        },
+        {
+          "name": "Blameless",
+          "url": "https://www.blameless.com/",
+          "type": "Commercial",
+          "description": "SRE platform with AI-powered incident management and automated retrospectives."
+        },
+        {
+          "name": "FireHydrant",
+          "url": "https://firehydrant.com/",
+          "type": "Commercial",
+          "description": "Incident management with AI-generated retrospectives and automated status pages."
+        },
+        {
+          "name": "GitHub Agentic Workflows",
+          "url": "https://github.github.io/gh-aw/",
+          "type": "Open-source",
+          "description": "Run AI agents inside GitHub Actions for issue triage and CI failure analysis."
+        },
+        {
+          "name": "HolmesGPT",
+          "url": "https://github.com/HolmesGPT/holmesgpt",
+          "type": "Open-source (CNCF Sandbox)",
+          "description": "Combines observability telemetry with LLM reasoning for agentic troubleshooting, self-hostable so data doesn't leave your environment."
+        },
+        {
+          "name": "incident.io",
+          "url": "https://incident.io/",
+          "type": "Commercial",
+          "description": "End-to-end incident management with AI summaries and native Slack workflows."
+        },
+        {
+          "name": "IncidentFox",
+          "url": "https://github.com/incidentfox/incidentfox",
+          "type": "Open-source",
+          "description": "Automated investigation and hypothesis formation with Slack/PagerDuty integration."
+        },
+        {
+          "name": "Moogsoft",
+          "url": "https://www.moogsoft.com/",
+          "type": "Commercial",
+          "description": "AIOps correlation platform focused on reducing alert fatigue via noise reduction."
+        },
+        {
+          "name": "Opsgenie",
+          "url": "https://www.atlassian.com/software/opsgenie",
+          "type": "Commercial (Atlassian)",
+          "description": "AI-assisted alert routing and on-call scheduling."
+        },
+        {
+          "name": "PagerDuty AIOps",
+          "url": "https://www.pagerduty.com/platform/aiops/",
+          "type": "Commercial",
+          "description": "ML-based event correlation and noise reduction before alerts reach a human."
+        },
+        {
+          "name": "Keep",
+          "url": "https://github.com/keephq/keep",
+          "type": "Open-source",
+          "description": "Correlates and deduplicates alerts from any monitoring tool with AI-powered noise reduction \u2014 a good hub if you already run several disconnected monitoring tools."
+        },
+        {
+          "name": "Rootly",
+          "url": "https://rootly.com/",
+          "type": "Commercial",
+          "description": "Automated incident timelines and AI-generated postmortems in Slack-native workflows."
+        },
+        {
+          "name": "Shoreline",
+          "url": "https://shoreline.io/",
+          "type": "Commercial",
+          "description": "Converts runbooks into automated remediation that executes across entire fleets."
+        },
+        {
+          "name": "Tracecat",
+          "url": "https://github.com/TracecatHQ/tracecat",
+          "type": "Open-source",
+          "description": "Security/reliability automation with 100+ integrations and sandboxed execution."
+        },
+        {
+          "name": "Cleric",
+          "url": "https://cleric.ai/",
+          "type": "Commercial",
+          "description": "Autonomous AI SRE that maps architecture and delivers root-cause diagnoses with confidence scores in Slack; a 2025 Gartner Cool Vendor."
+        },
+        {
+          "name": "Resolve AI",
+          "url": "https://resolve.ai/",
+          "type": "Commercial",
+          "description": "Agentic production engineer for Kubernetes/AWS/GitHub targeting 80% autonomous alert resolution."
+        },
+        {
+          "name": "NeuBird Hawkeye",
+          "url": "https://neubird.ai/",
+          "type": "Commercial",
+          "description": "Hybrid/multi-cloud incident resolution with Datadog/Splunk/PagerDuty/ServiceNow integrations; available SOC-2 VPC deployment."
+        },
+        {
+          "name": "Edge Delta",
+          "url": "https://edgedelta.com/",
+          "type": "Commercial",
+          "description": "Telemetry pipelines plus role-aware \"AI Teammates\" that autonomously investigate anomalies across SRE, DevOps, and security."
+        },
+        {
+          "name": "Traversal",
+          "url": "https://www.traversal.com/",
+          "type": "Commercial",
+          "description": "Causal-ML root cause analysis using reinforcement learning over a \"Production World Model.\""
+        },
+        {
+          "name": "Datafruit",
+          "url": "https://datafruit.dev/",
+          "type": "Commercial (YC)",
+          "description": "Agentic DevOps engineer that learns your deploy standards and handles ops requests via Slack."
+        },
+        {
+          "name": "SRE.ai",
+          "url": "https://www.sre.ai/",
+          "type": "Commercial (YC)",
+          "description": "Autonomous agents for CI, test, and incident workflow automation."
+        },
+        {
+          "name": "AWS Security Incident Response Agent",
+          "url": "https://aws.amazon.com/blogs/security/aws-launches-ai-enhanced-security-innovations-at-reinvent-2025/",
+          "type": "Commercial (AWS)",
+          "description": "Native agentic AI for autonomous on-call security incident response."
+        }
+      ]
+    },
+    {
+      "name": "AI Monitoring and Observability",
+      "tools": [
+        {
+          "name": "Arize Phoenix",
+          "url": "https://github.com/Arize-ai/phoenix",
+          "type": "Open-source",
+          "description": "AI observability with OpenTelemetry tracing, drift detection, and RAG debugging for production AI systems."
+        },
+        {
+          "name": "Chronosphere",
+          "url": "https://chronosphere.io/",
+          "type": "Commercial",
+          "description": "Cloud-native observability with AI-driven telemetry cost optimization."
+        },
+        {
+          "name": "Coralogix",
+          "url": "https://coralogix.com/",
+          "type": "Commercial",
+          "description": "Full-stack observability with AI-powered log analysis and cost-effective retention."
+        },
+        {
+          "name": "Datadog Bits AI",
+          "url": "https://www.datadoghq.com/product/platform/bits-ai/",
+          "type": "Commercial",
+          "description": "Natural-language metric queries and automated root cause investigation across the Datadog platform."
+        },
+        {
+          "name": "Dynatrace Davis AI",
+          "url": "https://docs.dynatrace.com/docs/platform/davis-ai",
+          "type": "Commercial",
+          "description": "Causal AI engine for automated RCA and predictive problem detection."
+        },
+        {
+          "name": "Grafana",
+          "url": "https://github.com/grafana/grafana",
+          "type": "Open-source",
+          "description": "The foundational dashboarding layer most AI observability workflows are built on top of."
+        },
+        {
+          "name": "Grafana AI",
+          "url": "https://grafana.com/products/cloud/ai-tools-for-observability/",
+          "type": "Commercial",
+          "description": "Built-in SRE agent, adaptive telemetry cost reduction, and AI-assisted query generation on top of the OSS stack."
+        },
+        {
+          "name": "Groundcover",
+          "url": "https://www.groundcover.com/",
+          "type": "Commercial",
+          "description": "eBPF-based observability requiring zero manual instrumentation, with AI root cause analysis."
+        },
+        {
+          "name": "Honeycomb",
+          "url": "https://www.honeycomb.io/",
+          "type": "Commercial",
+          "description": "Translates natural language into complex queries for debugging distributed systems."
+        },
+        {
+          "name": "Metoro Guardian",
+          "url": "https://metoro.io/",
+          "type": "Commercial",
+          "description": "Combines telemetry and code analysis to auto-generate fix PRs from observed incidents."
+        },
+        {
+          "name": "New Relic AI",
+          "url": "https://newrelic.com/platform/new-relic-ai",
+          "type": "Commercial",
+          "description": "Natural-language querying and anomaly explanation across the New Relic platform."
+        },
+        {
+          "name": "Prometheus Operator",
+          "url": "https://github.com/prometheus-operator/prometheus-operator",
+          "type": "Open-source",
+          "description": "Foundation for cloud-native monitoring pipelines feeding most AI alerting tools."
+        },
+        {
+          "name": "Splunk AI",
+          "url": "https://www.splunk.com/en_us/products.html",
+          "type": "Commercial",
+          "description": "Natural-language search and predictive insights across IT infrastructure data."
+        },
+        {
+          "name": "Sumo Logic",
+          "url": "https://www.sumologic.com/",
+          "type": "Commercial",
+          "description": "Cloud-native machine data analytics with AI-driven threat detection."
+        },
+        {
+          "name": "Thanos",
+          "url": "https://github.com/thanos-io/thanos",
+          "type": "Open-source (CNCF incubating)",
+          "description": "Long-term storage and global query view for large-scale Prometheus deployments."
+        },
+        {
+          "name": "OpenObserve",
+          "url": "https://github.com/openobserve/openobserve",
+          "type": "Open-source (Rust)",
+          "description": "Unified logs/metrics/traces platform claiming 140x lower storage cost than typical stacks."
+        },
+        {
+          "name": "Opswald",
+          "url": "https://www.opswald.com/ai-agent-debugging/",
+          "type": "Commercial",
+          "description": "Debugging platform specifically for AI agents \u2014 captures prompts, tool calls, and side effects so you can replay a failed run."
+        },
+        {
+          "name": "VictoriaMetrics",
+          "url": "https://github.com/VictoriaMetrics/VictoriaMetrics",
+          "type": "Open-source",
+          "description": "Fast, cost-effective, Prometheus/Grafana-compatible time series database."
+        },
+        {
+          "name": "Coroot",
+          "url": "https://github.com/coroot/coroot",
+          "type": "Open-source",
+          "description": "eBPF-based zero-instrumentation APM with AI root cause analysis and SLO-based alerting."
+        },
+        {
+          "name": "Apache SkyWalking",
+          "url": "https://github.com/apache/skywalking",
+          "type": "Open-source",
+          "description": "Full-stack APM with distributed tracing and eBPF-powered Kubernetes monitoring."
+        },
+        {
+          "name": "Dash0",
+          "url": "https://dash0.com/",
+          "type": "Commercial",
+          "description": "OpenTelemetry-native platform with specialized \"Agent0\" agents for SRE, cost, migration, and security."
+        },
+        {
+          "name": "SigNoz",
+          "url": "https://github.com/SigNoz/signoz",
+          "type": "Open-source",
+          "description": "OpenTelemetry-native APM unifying logs/metrics/traces with native LLM-app observability."
+        },
+        {
+          "name": "Flip AI",
+          "url": "https://www.flip.ai/",
+          "type": "Commercial",
+          "description": "DevOps-specific LLM predicting incidents and generating RCAs across Datadog/Splunk/AppDynamics."
+        },
+        {
+          "name": "Coralogix Olly",
+          "url": "https://ollyhq.com/",
+          "type": "Commercial",
+          "description": "Autonomous agent correlating logs/metrics/traces with code-aware root cause analysis."
+        },
+        {
+          "name": "LogicMonitor Edwin AI",
+          "url": "https://www.logicmonitor.com/edwin-ai",
+          "type": "Commercial",
+          "description": "Connects 3,000+ tools for correlation, RCA, and autonomous remediation."
+        },
+        {
+          "name": "New Relic SRE Agent",
+          "url": "https://newrelic.com/platform/sre-agent",
+          "type": "Commercial",
+          "description": "AI-powered autonomous incident diagnosis across app and infra layers."
+        },
+        {
+          "name": "AgentSight",
+          "url": "https://github.com/eunomia-bpf/agentsight",
+          "type": "Open-source",
+          "description": "eBPF boundary tracing for monitoring AI *agents themselves* (Claude Code, Cursor, Gemini CLI) with under 3% overhead."
+        }
+      ]
+    },
+    {
+      "name": "AI Security Scanning and AI SOC",
+      "tools": [
+        {
+          "name": "Aqua Security",
+          "url": "https://www.aquasec.com/",
+          "type": "Commercial",
+          "description": "Cloud-native platform with AI-powered runtime protection and image scanning."
+        },
+        {
+          "name": "Checkov",
+          "url": "https://github.com/bridgecrewio/checkov",
+          "type": "Open-source",
+          "description": "Static IaC security analysis across Terraform, CloudFormation, Kubernetes, and Dockerfile."
+        },
+        {
+          "name": "Falco",
+          "url": "https://github.com/falcosecurity/falco",
+          "type": "Open-source (CNCF graduated)",
+          "description": "Runtime threat detection for containers and Kubernetes."
+        },
+        {
+          "name": "GitGuardian",
+          "url": "https://www.gitguardian.com/",
+          "type": "Commercial",
+          "description": "AI-powered secrets detection across Git repos, CI/CD, and Docker images."
+        },
+        {
+          "name": "Endor Labs",
+          "url": "https://www.endorlabs.com/",
+          "type": "Commercial",
+          "description": "Identifies *reachable* vulnerabilities to cut false positives in supply-chain scanning."
+        },
+        {
+          "name": "Lacework",
+          "url": "https://www.lacework.com/",
+          "type": "Commercial",
+          "description": "Behavioral AI detecting cloud-workload anomalies without hand-written rules."
+        },
+        {
+          "name": "MCP-Scan",
+          "url": "https://labs.snyk.io/",
+          "type": "Open-source",
+          "description": "Audits Model Context Protocol servers for security issues before you connect an LLM to them."
+        },
+        {
+          "name": "Orca Security",
+          "url": "https://orca.security/",
+          "type": "Commercial",
+          "description": "Agentless cloud security with AI-prioritized risk across workloads and identities."
+        },
+        {
+          "name": "Prisma Cloud",
+          "url": "https://www.paloaltonetworks.com/prisma/cloud",
+          "type": "Commercial",
+          "description": "CNAPP with AI-driven vulnerability prioritization and compliance checks."
+        },
+        {
+          "name": "Semgrep",
+          "url": "https://github.com/semgrep/semgrep",
+          "type": "Open-source",
+          "description": "Fast static analysis across 30+ languages, including HCL and YAML."
+        },
+        {
+          "name": "Snyk",
+          "url": "https://snyk.io/product/",
+          "type": "Commercial",
+          "description": "DeepCode AI engine scanning code, containers, IaC, and AI-generated code in real time."
+        },
+        {
+          "name": "Socket",
+          "url": "https://socket.dev/",
+          "type": "Commercial",
+          "description": "Detects malicious/compromised open-source packages before they reach production."
+        },
+        {
+          "name": "SonarQube",
+          "url": "https://www.sonarsource.com/products/sonarqube/",
+          "type": "Open-source core / Commercial",
+          "description": "Code quality and security analysis with AI-assisted vulnerability detection."
+        },
+        {
+          "name": "Terraform Sentinel",
+          "url": "https://www.hashicorp.com/sentinel",
+          "type": "Commercial (HashiCorp)",
+          "description": "Policy-as-code enforcement for Terraform changes."
+        },
+        {
+          "name": "tfsec",
+          "url": "https://github.com/aquasecurity/tfsec",
+          "type": "Open-source",
+          "description": "Security scanner for Terraform misconfigurations."
+        },
+        {
+          "name": "Trivy",
+          "url": "https://github.com/aquasecurity/trivy",
+          "type": "Open-source",
+          "description": "Widely adopted vulnerability scanner for containers, IaC, Kubernetes, and code."
+        },
+        {
+          "name": "Wiz",
+          "url": "https://www.wiz.io/",
+          "type": "Commercial",
+          "description": "Unifies vulnerability findings with cloud context to prioritize exploitable risk."
+        },
+        {
+          "name": "Kyverno",
+          "url": "https://github.com/kyverno/kyverno",
+          "type": "Open-source (CNCF incubating)",
+          "description": "Kubernetes-native policy engine for validating and mutating configs."
+        },
+        {
+          "name": "OPA Gatekeeper",
+          "url": "https://github.com/open-policy-agent/gatekeeper",
+          "type": "Open-source",
+          "description": "Policy controller for Kubernetes admission control based on Open Policy Agent."
+        },
+        {
+          "name": "Sysdig",
+          "url": "https://www.sysdig.com/",
+          "type": "Commercial",
+          "description": "Runtime protection with \"Sysdig Sage\" AI analyst for automated threat investigation."
+        },
+        {
+          "name": "AccuKnox",
+          "url": "https://accuknox.com/",
+          "type": "Commercial",
+          "description": "Zero-trust cloud-native security with eBPF runtime visibility and GenAI policy generation."
+        },
+        {
+          "name": "Checkmarx One",
+          "url": "https://checkmarx.com/",
+          "type": "Commercial",
+          "description": "Unified SAST/SCA/DAST/IaC/API/container platform with AI-powered autonomous remediation."
+        },
+        {
+          "name": "Credo AI",
+          "url": "https://www.credo.ai/",
+          "type": "Commercial",
+          "description": "AI governance/compliance platform for EU AI Act and NIST AI RMF enforcement."
+        },
+        {
+          "name": "Holistic AI",
+          "url": "https://www.holisticai.com/",
+          "type": "Commercial",
+          "description": "Continuous audit, bias detection, and compliance tracking for AI systems in production."
+        },
+        {
+          "name": "Microsoft Purview",
+          "url": "https://www.microsoft.com/en-us/security/business/microsoft-purview",
+          "type": "Commercial",
+          "description": "Unified data governance and AI security across Microsoft 365/Azure."
+        },
+        {
+          "name": "Aikido Security",
+          "url": "https://www.aikido.dev/",
+          "type": "Commercial",
+          "description": "Unified AppSec (SAST/DAST/SCA/IaC/secrets/runtime) with AI AutoTriage cutting noise ~95%."
+        },
+        {
+          "name": "ZeroPath",
+          "url": "https://zeropath.com/",
+          "type": "Commercial",
+          "description": "AI-native SAST combining LLMs with AST analysis; found 170 verified bugs in curl."
+        },
+        {
+          "name": "Pixee",
+          "url": "https://www.pixee.ai/",
+          "type": "Commercial",
+          "description": "Agentic AppSec that writes context-aware fix PRs with a 76% merge rate across 100,000+ PRs."
+        },
+        {
+          "name": "Corgea",
+          "url": "https://corgea.com/",
+          "type": "Commercial (YC)",
+          "description": "Finds and fixes insecure code/IaC/containers with over 90% claimed fix accuracy."
+        },
+        {
+          "name": "Backslash Security",
+          "url": "https://www.backslash.security/",
+          "type": "Commercial",
+          "description": "Digital-twin approach to securing AI-native development across IDEs, agents, and MCPs."
+        },
+        {
+          "name": "Ghost Security",
+          "url": "https://ghostsecurity.ai/",
+          "type": "Commercial",
+          "description": "Agent-native AppSec with an autonomous engine and a Claude Code plugin for in-IDE vulnerability fixing."
+        },
+        {
+          "name": "Cyera",
+          "url": "https://www.cyera.com/",
+          "type": "Commercial",
+          "description": "AI-native data security posture management, agentlessly classifying data at scale."
+        },
+        {
+          "name": "Prophet Security",
+          "url": "https://www.prophetsecurity.ai/",
+          "type": "Commercial",
+          "description": "Agentic SOC platform automating Tier 1-3 alert triage and threat hunting."
+        },
+        {
+          "name": "Dropzone AI",
+          "url": "https://www.dropzone.ai/",
+          "type": "Commercial",
+          "description": "Pre-trained agents acting as Tier-1 SOC analysts, investigating alerts end to end."
+        },
+        {
+          "name": "7AI",
+          "url": "https://7ai.com/",
+          "type": "Commercial",
+          "description": "Agentic security platform from the Cybereason founders, processed 2.5M+ alerts."
+        },
+        {
+          "name": "Conifers CognitiveSOC",
+          "url": "https://www.conifers.ai/",
+          "type": "Commercial",
+          "description": "Multi-tier AI SOC agents for enterprise-scale autonomous triage."
+        },
+        {
+          "name": "Hex Security",
+          "url": "https://www.ycombinator.com/companies/hex-security",
+          "type": "Commercial (YC)",
+          "description": "Continuous autonomous 24/7 penetration testing agents."
+        },
+        {
+          "name": "Upwind",
+          "url": "https://www.upwind.io/",
+          "type": "Commercial",
+          "description": "Runtime-first CNAPP with eBPF-based threat detection."
+        },
+        {
+          "name": "HexStrike AI",
+          "url": "https://github.com/0x4m4/hexstrike-ai",
+          "type": "Open-source",
+          "description": "MCP server bridging LLMs to 150+ offensive security tools for AI-driven red-teaming."
+        },
+        {
+          "name": "Databricks Lakewatch",
+          "url": "https://www.databricks.com/product/lakewatch",
+          "type": "Commercial",
+          "description": "Agentic SIEM on the lakehouse for automated triage and natural-language-to-SQL queries."
+        },
+        {
+          "name": "Microsoft Security Copilot",
+          "url": "https://learn.microsoft.com/en-us/copilot/security/agents-overview",
+          "type": "Commercial",
+          "description": "Agentic SOC platform extending Defender with autonomous investigation agents."
+        }
+      ]
+    },
+    {
+      "name": "AI Cost Optimization and FinOps",
+      "tools": [
+        {
+          "name": "Anodot",
+          "url": "https://www.anodot.com/",
+          "type": "Commercial",
+          "description": "Autonomous anomaly detection and commitment management for cloud cost."
+        },
+        {
+          "name": "CAST AI",
+          "url": "https://cast.ai/",
+          "type": "Commercial",
+          "description": "Kubernetes cost optimization with automated rightsizing and spot management."
+        },
+        {
+          "name": "CloudZero",
+          "url": "https://www.cloudzero.com/",
+          "type": "Commercial",
+          "description": "Cost intelligence with AI-driven allocation and unit economics tracking."
+        },
+        {
+          "name": "Finout",
+          "url": "https://www.finout.io/",
+          "type": "Commercial",
+          "description": "FinOps cost allocation across cloud, Kubernetes, and SaaS combined with observability data."
+        },
+        {
+          "name": "Kubecost",
+          "url": "https://github.com/kubecost/kubecost",
+          "type": "Open-source core / Commercial",
+          "description": "Real-time Kubernetes cost monitoring by service, deployment, and namespace."
+        },
+        {
+          "name": "nOps",
+          "url": "https://www.nops.io/",
+          "type": "Commercial",
+          "description": "AWS-focused rightsizing and automated savings execution."
+        },
+        {
+          "name": "OpenCost",
+          "url": "https://github.com/opencost/opencost",
+          "type": "Open-source (CNCF Sandbox)",
+          "description": "Vendor-neutral real-time Kubernetes cost monitoring."
+        },
+        {
+          "name": "Spot by NetApp",
+          "url": "https://spot.io/",
+          "type": "Commercial",
+          "description": "AI-driven spot-instance and autoscaling optimization."
+        },
+        {
+          "name": "Turbonomic",
+          "url": "https://www.ibm.com/products/turbonomic",
+          "type": "Commercial (IBM)",
+          "description": "Continuously optimizes compute, storage, and network allocation."
+        },
+        {
+          "name": "Vantage",
+          "url": "https://www.vantage.sh/",
+          "type": "Commercial",
+          "description": "Cost transparency and AI recommendations across AWS/Azure/GCP/Kubernetes."
+        },
+        {
+          "name": "Komiser",
+          "url": "https://github.com/tailwarden/komiser",
+          "type": "Open-source",
+          "description": "Multi-cloud cost dashboard."
+        },
+        {
+          "name": "Antimetal",
+          "url": "https://www.antimetal.com/",
+          "type": "Commercial",
+          "description": "Autonomously purchases Reserved Instances/Savings Plans based on real-time usage."
+        },
+        {
+          "name": "PointFive",
+          "url": "https://www.pointfive.co/",
+          "type": "Commercial",
+          "description": "DeepWaste detection (400+ checks) with a Claude-powered assistant for savings actions."
+        },
+        {
+          "name": "ProsperOps",
+          "url": "https://www.prosperops.com/",
+          "type": "Commercial",
+          "description": "No-touch discount management across AWS/Azure/GCP, manages $6B+ in annual spend."
+        },
+        {
+          "name": "Costimizer",
+          "url": "https://costimizer.ai/",
+          "type": "Commercial",
+          "description": "Agentic FinOps autopilot that rightsizes and enforces budgets automatically."
+        }
+      ]
+    },
+    {
+      "name": "MCP Servers for DevOps and SRE",
+      "tools": [
+        {
+          "name": "Atlassian MCP Server",
+          "url": "https://www.npmjs.com/package/@anthropic/mcp-atlassian",
+          "type": "Open-source",
+          "description": "Jira/Confluence: query issues, create tickets, search docs."
+        },
+        {
+          "name": "AWS MCP Servers",
+          "url": "https://awslabs.github.io/mcp/",
+          "type": "Open-source",
+          "description": "Official AWS suite covering Terraform, CDK, CloudFormation, Lambda, S3, CloudWatch, ECS."
+        },
+        {
+          "name": "Cloudflare MCP Server",
+          "url": "https://github.com/cloudflare/mcp-server-cloudflare",
+          "type": "Open-source",
+          "description": "Manage Workers, KV, R2, and DNS."
+        },
+        {
+          "name": "Datadog MCP Server",
+          "url": "https://github.com/datadog-labs/mcp-server",
+          "type": "Open-source",
+          "description": "Query metrics, monitors, dashboards, logs."
+        },
+        {
+          "name": "Docker MCP Gateway",
+          "url": "https://github.com/docker/mcp-gateway",
+          "type": "Open-source",
+          "description": "Container management and Compose workflows."
+        },
+        {
+          "name": "GitHub MCP Server",
+          "url": "https://github.com/github/github-mcp-server",
+          "type": "Open-source",
+          "description": "Repos, issues, PRs, Actions, code search."
+        },
+        {
+          "name": "Grafana MCP Server",
+          "url": "https://github.com/grafana/mcp-grafana",
+          "type": "Open-source",
+          "description": "Query dashboards, datasources, alerts."
+        },
+        {
+          "name": "Kubernetes MCP Server",
+          "url": "https://github.com/Flux159/mcp-server-kubernetes",
+          "type": "Open-source",
+          "description": "kubectl operations and cluster introspection."
+        },
+        {
+          "name": "KubeStellar Console MCP",
+          "url": "https://github.com/kubestellar/console/tree/main/cmd/kc-agent",
+          "type": "Open-source",
+          "description": "Bridges kubeconfig contexts to LLMs for multi-cluster ops."
+        },
+        {
+          "name": "Linear MCP Server",
+          "url": "https://github.com/jerhadf/linear-mcp-server",
+          "type": "Open-source",
+          "description": "Manage issues, projects, cycles."
+        },
+        {
+          "name": "MCP Reference Servers",
+          "url": "https://github.com/modelcontextprotocol/servers",
+          "type": "Open-source",
+          "description": "Official reference implementations: filesystem, Git, GitHub, PostgreSQL, Puppeteer."
+        },
+        {
+          "name": "PagerDuty MCP Server",
+          "url": "https://github.com/PagerDuty/pagerduty-mcp-server",
+          "type": "Open-source",
+          "description": "Incident management, on-call schedules, alert routing."
+        },
+        {
+          "name": "Sentry MCP Server",
+          "url": "https://github.com/getsentry/sentry-mcp",
+          "type": "Open-source",
+          "description": "Error tracking, issue search, event analysis."
+        },
+        {
+          "name": "Terraform MCP Server",
+          "url": "https://github.com/hashicorp/terraform-mcp-server",
+          "type": "Open-source",
+          "description": "Official: module search, provider docs, policy enforcement."
+        },
+        {
+          "name": "Argo CD MCP Server",
+          "url": "https://github.com/argoproj-labs/mcp-for-argocd",
+          "type": "Open-source",
+          "description": "List, inspect, sync, manage Argo CD applications."
+        },
+        {
+          "name": "Azure DevOps MCP Server",
+          "url": "https://github.com/microsoft/azure-devops-mcp",
+          "type": "Open-source",
+          "description": "Work items, PRs, pipelines, repos, wikis."
+        },
+        {
+          "name": "GitLab MCP Server",
+          "url": "https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_server/",
+          "type": "Open-source",
+          "description": "Projects, issues, MRs, CI/CD pipelines with OAuth 2.0."
+        },
+        {
+          "name": "Jenkins MCP Server",
+          "url": "https://github.com/jenkinsci/mcp-server-plugin",
+          "type": "Open-source",
+          "description": "Jobs, builds, pipelines via SSE/streamable HTTP."
+        },
+        {
+          "name": "JFrog MCP Server",
+          "url": "https://github.com/jfrog/jfrog-mcp-server",
+          "type": "Open-source",
+          "description": "Artifactory repo management, artifact search, security scanning."
+        },
+        {
+          "name": "Notion MCP Server",
+          "url": "https://developers.notion.com/docs/mcp",
+          "type": "Open-source",
+          "description": "Semantic search across workspaces plus page creation."
+        },
+        {
+          "name": "Prometheus MCP Server",
+          "url": "https://github.com/pab1it0/prometheus-mcp-server",
+          "type": "Open-source",
+          "description": "PromQL queries from AI agents."
+        },
+        {
+          "name": "Slack MCP Server",
+          "url": "https://docs.slack.dev/ai/slack-mcp-server/",
+          "type": "Open-source",
+          "description": "Search messages, read history, send messages."
+        },
+        {
+          "name": "Pulumi MCP Server",
+          "url": "https://www.pulumi.com/docs/ai/mcp-server/",
+          "type": "Open-source",
+          "description": "Infra previews, resource lookups, delegates to Pulumi Neo."
+        },
+        {
+          "name": "Vercel MCP Server",
+          "url": "https://github.com/vercel/mcp-adapter",
+          "type": "Open-source",
+          "description": "Serverless deployment and edge function management."
+        },
+        {
+          "name": "Lens MCP Server",
+          "url": "https://lenshq.io/",
+          "type": "Open-source",
+          "description": "Built into Lens Kubernetes IDE, native EKS/AKS integration."
+        },
+        {
+          "name": "StackGen MCP Server",
+          "url": "https://docs.stackgen.com/docs/stackbuilder/mcp-integration",
+          "type": "Open-source",
+          "description": "Generates policy-compliant Terraform/K8s/Helm from natural language."
+        },
+        {
+          "name": "GCP gcloud MCP Server",
+          "url": "https://github.com/googleapis/gcloud-mcp",
+          "type": "Open-source",
+          "description": "Interact with GCP resources via gcloud CLI in natural language."
+        },
+        {
+          "name": "Google Cloud Run MCP Server",
+          "url": "https://github.com/GoogleCloudPlatform/cloud-run-mcp",
+          "type": "Open-source",
+          "description": "Deploy and manage Cloud Run apps."
+        },
+        {
+          "name": "DigitalOcean MCP Server",
+          "url": "https://github.com/digitalocean/digitalocean-mcp",
+          "type": "Open-source",
+          "description": "Droplets, App Platform, databases, DOKS, networking."
+        },
+        {
+          "name": "Oracle Cloud MCP Server",
+          "url": "https://github.com/oracle/mcp",
+          "type": "Open-source",
+          "description": "Reference implementations for OCI products."
+        },
+        {
+          "name": "New Relic MCP Server",
+          "url": "https://github.com/newrelic/mcp-server",
+          "type": "Open-source",
+          "description": "Telemetry queries and alert investigation."
+        },
+        {
+          "name": "Splunk MCP Server",
+          "url": "https://github.com/CiscoDevNet/Splunk-MCP-Server-official",
+          "type": "Open-source",
+          "description": "Run searches, query data for agentic workflows."
+        },
+        {
+          "name": "Elasticsearch MCP Server",
+          "url": "https://github.com/elastic/mcp-server-elasticsearch",
+          "type": "Open-source",
+          "description": "Natural-language querying and data retrieval."
+        },
+        {
+          "name": "Dynatrace MCP Server",
+          "url": "https://github.com/dynatrace-oss/dynatrace-mcp",
+          "type": "Open-source",
+          "description": "Metrics, traces, logs into AI dev workflows."
+        },
+        {
+          "name": "CircleCI MCP Server",
+          "url": "https://github.com/CircleCI-Public/mcp-server-circleci",
+          "type": "Open-source",
+          "description": "Pipelines, builds, workflows via natural language."
+        },
+        {
+          "name": "Buildkite MCP Server",
+          "url": "https://github.com/buildkite/buildkite-mcp-server",
+          "type": "Open-source",
+          "description": "Pipelines, builds, jobs, test data."
+        },
+        {
+          "name": "MongoDB MCP Server",
+          "url": "https://github.com/mongodb-js/mongodb-mcp-server",
+          "type": "Open-source",
+          "description": "Atlas/Community/Enterprise natural-language DB management."
+        },
+        {
+          "name": "Redis MCP Server",
+          "url": "https://github.com/redis/mcp-redis",
+          "type": "Open-source",
+          "description": "Natural-language interface for managing/searching Redis data."
+        },
+        {
+          "name": "Neon MCP Server",
+          "url": "https://github.com/neondatabase/mcp-server-neon",
+          "type": "Open-source",
+          "description": "Manage serverless Postgres projects, branches, run SQL."
+        },
+        {
+          "name": "Supabase MCP Server",
+          "url": "https://github.com/supabase-community/supabase-mcp",
+          "type": "Open-source",
+          "description": "Tables, queries, config, database ops."
+        },
+        {
+          "name": "HashiCorp Vault MCP Server",
+          "url": "https://github.com/hashicorp/vault-mcp-server",
+          "type": "Open-source",
+          "description": "Manage secrets and mounts."
+        },
+        {
+          "name": "Snyk MCP Server",
+          "url": "https://github.com/snyk/studio-mcp",
+          "type": "Open-source",
+          "description": "Security scanning for code, dependencies, configs."
+        },
+        {
+          "name": "Trivy MCP Server",
+          "url": "https://github.com/aquasecurity/trivy-mcp",
+          "type": "Open-source",
+          "description": "Vulnerability scanning, misconfiguration and secret detection."
+        },
+        {
+          "name": "Rootly MCP Server",
+          "url": "https://docs.rootly.com/integrations/mcp-server",
+          "type": "Open-source",
+          "description": "Resolve incidents without leaving the IDE."
+        },
+        {
+          "name": "FireHydrant MCP Server",
+          "url": "https://github.com/firehydrant/firehydrant-mcp",
+          "type": "Open-source",
+          "description": "Interact with the incident management API."
+        },
+        {
+          "name": "Incident.io MCP Server",
+          "url": "https://github.com/incident-io/incidentio-mcp-golang",
+          "type": "Open-source",
+          "description": "Incident management and response."
+        },
+        {
+          "name": "Ansible MCP Server",
+          "url": "https://github.com/sibilleb/AAP-Enterprise-MCP-Server",
+          "type": "Open-source",
+          "description": "AI-driven playbook execution and automation."
+        },
+        {
+          "name": "Bitbucket MCP Server",
+          "url": "https://github.com/MatanYemini/bitbucket-mcp",
+          "type": "Open-source",
+          "description": "Repos, PRs, code reviews."
+        },
+        {
+          "name": "Cloudflare Code Mode MCP Server",
+          "url": "https://developers.cloudflare.com/agents/model-context-protocol/mcp-servers-for-cloudflare/",
+          "type": "Open-source",
+          "description": "Search/execute tools over a type-aware SDK across 2,500+ endpoints."
+        },
+        {
+          "name": "Render MCP Server",
+          "url": "https://github.com/render-oss/render-mcp-server",
+          "type": "Open-source",
+          "description": "Manage services, deploys, environments."
+        },
+        {
+          "name": "Fly.io MCP Server",
+          "url": "https://github.com/superfly/flymcp",
+          "type": "Open-source",
+          "description": "Wraps flyctl to provision Fly machines/apps."
+        },
+        {
+          "name": "SigNoz MCP Server",
+          "url": "https://github.com/SigNoz/signoz-mcp-server",
+          "type": "Open-source",
+          "description": "Metrics, traces, logs, alerts, dashboards, ClickHouse SQL."
+        },
+        {
+          "name": "Coralogix MCP Server",
+          "url": "https://coralogix.com/docs/user-guides/mcp-server/overview/",
+          "type": "Open-source",
+          "description": "Logs, metrics, traces, RUM data."
+        },
+        {
+          "name": "Logz.io MCP Server",
+          "url": "https://docs.logz.io/docs/open360/logzio-mcp/",
+          "type": "Open-source",
+          "description": "Logs, metrics, dashboards, alerts."
+        },
+        {
+          "name": "ClickHouse MCP Server",
+          "url": "https://github.com/ClickHouse/mcp-clickhouse",
+          "type": "Open-source",
+          "description": "SQL queries, schema exploration, read-only defaults."
+        },
+        {
+          "name": "Turso MCP Server",
+          "url": "https://turso.tech/blog/introducing-the-turso-database-mcp-server",
+          "type": "Open-source",
+          "description": "Query/manage Turso and LibSQL databases."
+        },
+        {
+          "name": "Databricks MCP Servers",
+          "url": "https://docs.databricks.com/aws/en/generative-ai/mcp/",
+          "type": "Open-source",
+          "description": "Genie Space, Vector Search, Unity Catalog Functions."
+        },
+        {
+          "name": "Harness MCP Server",
+          "url": "https://github.com/harness/mcp-server",
+          "type": "Open-source",
+          "description": "CI/CD, GitOps, feature flags, FinOps, security testing, chaos."
+        },
+        {
+          "name": "Twilio MCP Server",
+          "url": "https://github.com/twilio-labs/mcp",
+          "type": "Open-source",
+          "description": "All Twilio public APIs plus an OpenAPI-to-MCP generator."
+        },
+        {
+          "name": "Stripe MCP Server",
+          "url": "https://github.com/stripe/agent-toolkit",
+          "type": "Open-source",
+          "description": "Payments, customers, invoices, products."
+        },
+        {
+          "name": "CrowdStrike Falcon MCP Server",
+          "url": "https://github.com/CrowdStrike/falcon-mcp",
+          "type": "Open-source",
+          "description": "Detections, incidents, behaviors for automated threat hunting."
+        },
+        {
+          "name": "Wiz MCP Server",
+          "url": "https://www.wiz.io/blog/introducing-mcp-server-for-wiz",
+          "type": "Open-source",
+          "description": "Natural-language queries over cloud inventory and risk posture."
+        },
+        {
+          "name": "Bitwarden MCP Server",
+          "url": "https://github.com/bitwarden/mcp-server",
+          "type": "Open-source",
+          "description": "Local-only CLI-backed vault access."
+        },
+        {
+          "name": "Doppler MCP Server",
+          "url": "https://github.com/DopplerHQ/mcp-server",
+          "type": "Open-source",
+          "description": "Secrets and configuration management."
+        },
+        {
+          "name": "Hetzner Cloud MCP Server",
+          "url": "https://github.com/dkruyt/mcp-hetzner",
+          "type": "Open-source",
+          "description": "Servers, networks, volumes via natural language."
+        },
+        {
+          "name": "Snowflake MCP Server",
+          "url": "https://github.com/Snowflake-Labs/mcp",
+          "type": "Open-source",
+          "description": "Cortex AI integration, object management, SQL orchestration."
+        },
+        {
+          "name": "MCP Toolbox for Databases",
+          "url": "https://github.com/googleapis/mcp-toolbox",
+          "type": "Open-source",
+          "description": "BigQuery, Spanner, AlloyDB, Cloud SQL, and 15+ databases."
+        },
+        {
+          "name": "LaunchDarkly MCP Server",
+          "url": "https://github.com/launchdarkly/mcp-server",
+          "type": "Open-source",
+          "description": "Feature flags, targeting rules, segments, AI configs."
+        },
+        {
+          "name": "Unleash MCP Server",
+          "url": "https://github.com/cuongtl1992/unleash-mcp",
+          "type": "Open-source",
+          "description": "Read and toggle open-source feature flags."
+        },
+        {
+          "name": "Temporal MCP Server",
+          "url": "https://github.com/alisaitteke/temporal-mcp",
+          "type": "Open-source",
+          "description": "Run, query, signal Temporal workflows."
+        },
+        {
+          "name": "Istio MCP Server",
+          "url": "https://github.com/krutsko/istio-mcp-server",
+          "type": "Open-source",
+          "description": "Read-only access to VirtualServices, DestinationRules, Gateways."
+        }
+      ]
+    },
+    {
+      "name": "AI-Powered CI/CD",
+      "tools": [
+        {
+          "name": "ArgoCD",
+          "url": "https://github.com/argoproj/argo-cd",
+          "type": "Open-source (CNCF graduated)",
+          "description": "GitOps continuous delivery for Kubernetes, foundation for AI-driven deployment workflows."
+        },
+        {
+          "name": "Buildkite",
+          "url": "https://buildkite.com/",
+          "type": "Commercial",
+          "description": "CI/CD with AI-powered test analytics and flaky test detection."
+        },
+        {
+          "name": "CircleCI",
+          "url": "https://circleci.com/",
+          "type": "Commercial",
+          "description": "Cloud CI/CD with AI-powered test splitting and pipeline optimization."
+        },
+        {
+          "name": "Codefresh",
+          "url": "https://codefresh.io/",
+          "type": "Commercial",
+          "description": "GitOps CI/CD built on Argo with AI-assisted pipeline creation."
+        },
+        {
+          "name": "Dagger",
+          "url": "https://github.com/dagger/dagger",
+          "type": "Open-source",
+          "description": "Programmable CI/CD engine running pipelines in containers, composable by AI agents."
+        },
+        {
+          "name": "Depot",
+          "url": "https://depot.dev/",
+          "type": "Commercial",
+          "description": "Managed build infra with up to 40x faster Docker builds via layer caching."
+        },
+        {
+          "name": "GitLab Duo",
+          "url": "https://about.gitlab.com/gitlab-duo/",
+          "type": "Commercial",
+          "description": "AI across the GitLab DevSecOps lifecycle including CI/CD pipeline generation."
+        },
+        {
+          "name": "Harness AIDA",
+          "url": "https://www.harness.io/products/aida",
+          "type": "Commercial",
+          "description": "AI assistant for pipeline creation and failure analysis."
+        },
+        {
+          "name": "Mergify",
+          "url": "https://mergify.com/",
+          "type": "Commercial",
+          "description": "AI-powered merge queue with intelligent batch merging."
+        },
+        {
+          "name": "PR-Agent",
+          "url": "https://github.com/qodo-ai/pr-agent",
+          "type": "Open-source",
+          "description": "Auto-describes, reviews, and generates tests for PRs across GitHub/GitLab/Bitbucket."
+        },
+        {
+          "name": "Tekton",
+          "url": "https://github.com/tektoncd/pipeline",
+          "type": "Open-source",
+          "description": "Cloud-native CI/CD building blocks for Kubernetes."
+        },
+        {
+          "name": "Trunk",
+          "url": "https://trunk.io/",
+          "type": "Commercial",
+          "description": "AI-powered code quality checks, merge queues, flaky test management."
+        },
+        {
+          "name": "Devtron",
+          "url": "https://github.com/devtron-labs/devtron",
+          "type": "Open-source",
+          "description": "Kubernetes-native DevOps platform with AI-driven cost optimization and canary deployments."
+        },
+        {
+          "name": "Woodpecker CI",
+          "url": "https://github.com/woodpecker-ci/woodpecker",
+          "type": "Open-source",
+          "description": "Community fork of Drone CI, container-native pipeline engine."
+        },
+        {
+          "name": "Claude Code Review",
+          "url": "https://github.com/anthropics/claude-code-security-review",
+          "type": "Open-source (Anthropic)",
+          "description": "Multi-agent GitHub Action analyzing PRs for logic errors and security vulnerabilities in parallel."
+        },
+        {
+          "name": "Cursor BugBot",
+          "url": "https://cursor.com/bugbot",
+          "type": "Commercial",
+          "description": "Reviews 2M+ PRs monthly with 8 parallel review passes."
+        },
+        {
+          "name": "Mendral",
+          "url": "https://www.mendral.com/",
+          "type": "Commercial (YC)",
+          "description": "Always-on AI DevOps engineer that diagnoses CI failures and opens fix PRs at a 75% acceptance rate."
+        },
+        {
+          "name": "Momentic",
+          "url": "https://momentic.ai/",
+          "type": "Commercial (YC)",
+          "description": "Writes and self-heals end-to-end tests for CI/CD."
+        },
+        {
+          "name": "Stably AI",
+          "url": "https://www.stably.ai/",
+          "type": "Commercial (YC)",
+          "description": "Diff-aware end-to-end tests written directly into CI with automatic selector healing."
+        },
+        {
+          "name": "testRigor",
+          "url": "https://testrigor.com/",
+          "type": "Commercial",
+          "description": "Codeless natural-language test creation for CI/CD pipelines."
+        },
+        {
+          "name": "Testsigma",
+          "url": "https://github.com/testsigmahq/testsigma",
+          "type": "Open-source",
+          "description": "Agentic test automation with self-healing tests."
+        }
+      ]
+    },
+    {
+      "name": "AI Log Analysis and Debugging",
+      "tools": [
+        {
+          "name": "agenttrace",
+          "url": "https://github.com/luoyuctl/agenttrace",
+          "type": "Open-source",
+          "description": "Local TUI for inspecting AI coding-agent logs \u2014 cost, tokens, latency, failures."
+        },
+        {
+          "name": "Axiom",
+          "url": "https://axiom.co/",
+          "type": "Commercial",
+          "description": "AI-powered query generation with unlimited data retention."
+        },
+        {
+          "name": "Elasticsearch",
+          "url": "https://github.com/elastic/elasticsearch",
+          "type": "Open-source",
+          "description": "Foundation for AI log analysis via ES|QL, vector search, and ML anomaly detection."
+        },
+        {
+          "name": "Grafana Loki",
+          "url": "https://github.com/grafana/loki",
+          "type": "Open-source",
+          "description": "Log aggregation designed for cloud-native environments, pairs with Grafana AI."
+        },
+        {
+          "name": "LogAI",
+          "url": "https://github.com/salesforce/logai",
+          "type": "Open-source (Salesforce)",
+          "description": "Toolkit for AI-powered log anomaly detection, clustering, and summarization."
+        },
+        {
+          "name": "OpenTelemetry Collector",
+          "url": "https://github.com/open-telemetry/opentelemetry-collector",
+          "type": "Open-source",
+          "description": "Vendor-agnostic telemetry pipeline feeding most AI analysis tools."
+        },
+        {
+          "name": "Parseable",
+          "url": "https://github.com/parseablehq/parseable",
+          "type": "Open-source (Rust)",
+          "description": "Cloud-native log storage with AI-powered analysis and alerting."
+        },
+        {
+          "name": "Vector",
+          "url": "https://github.com/vectordotdev/vector",
+          "type": "Open-source",
+          "description": "High-performance pipeline for routing logs/metrics/traces to AI analysis backends."
+        },
+        {
+          "name": "Zebrium",
+          "url": "https://www.zebrium.com/",
+          "type": "Commercial",
+          "description": "ML-powered root cause analysis directly from logs, no manual queries."
+        },
+        {
+          "name": "Fluentd",
+          "url": "https://github.com/fluent/fluentd",
+          "type": "Open-source (CNCF graduated)",
+          "description": "Unified logging layer for routing logs from any source to any destination."
+        },
+        {
+          "name": "Fluent Bit",
+          "url": "https://github.com/fluent/fluent-bit",
+          "type": "Open-source",
+          "description": "Fast, lightweight log processor for cloud-native environments."
+        },
+        {
+          "name": "Langfuse",
+          "url": "https://github.com/langfuse/langfuse",
+          "type": "Open-source",
+          "description": "LLM observability with tracing, prompt management, and evals for monitoring agents in DevOps pipelines."
+        },
+        {
+          "name": "OpenLLMetry",
+          "url": "https://github.com/traceloop/openllmetry",
+          "type": "Open-source",
+          "description": "OpenTelemetry-compatible instrumentation for OpenAI/Anthropic/other LLM providers."
+        },
+        {
+          "name": "Braintrust",
+          "url": "https://braintrust.dev/",
+          "type": "Commercial",
+          "description": "AI observability/eval platform with trace capture and automated scoring."
+        }
+      ]
+    },
+    {
+      "name": "AI Agent Frameworks",
+      "tools": [
+        {
+          "name": "AutoGen",
+          "url": "https://github.com/microsoft/autogen",
+          "type": "Open-source (Microsoft)",
+          "description": "Multi-agent framework with tool use and human-in-the-loop approvals."
+        },
+        {
+          "name": "Claude Agent SDK",
+          "url": "https://docs.claude.com/en/docs/agents",
+          "type": "Commercial (Anthropic)",
+          "description": "Framework for agentic apps with tool orchestration and guardrails."
+        },
+        {
+          "name": "CrewAI",
+          "url": "https://github.com/crewAIInc/crewAI",
+          "type": "Open-source",
+          "description": "Multi-agent orchestration for teams of agents handling complex tasks like migration planning."
+        },
+        {
+          "name": "Dify",
+          "url": "https://github.com/langgenius/dify",
+          "type": "Open-source",
+          "description": "LLM app platform with agent workflows and RAG for custom DevOps chatbots."
+        },
+        {
+          "name": "Haystack",
+          "url": "https://github.com/deepset-ai/haystack",
+          "type": "Open-source (deepset)",
+          "description": "RAG pipeline and agent framework for infra knowledge bases."
+        },
+        {
+          "name": "LangChain",
+          "url": "https://github.com/langchain-ai/langchain",
+          "type": "Open-source",
+          "description": "The most widely used framework for building custom DevOps agents with tool integrations."
+        },
+        {
+          "name": "LangChain Deep Agents",
+          "url": "https://github.com/langchain-ai/deepagents",
+          "type": "Open-source",
+          "description": "Reference agent harness with planning tools and subagent spawning for complex tasks."
+        },
+        {
+          "name": "LangGraph",
+          "url": "https://github.com/langchain-ai/langgraph",
+          "type": "Open-source",
+          "description": "Stateful multi-actor apps with LLMs, ideal for complex orchestration workflows."
+        },
+        {
+          "name": "Llama Stack",
+          "url": "https://github.com/meta-llama/llama-stack",
+          "type": "Open-source (Meta)",
+          "description": "Unified deployment stack: inference, agents, safety, evaluation."
+        },
+        {
+          "name": "LlamaIndex",
+          "url": "https://github.com/run-llama/llama_index",
+          "type": "Open-source",
+          "description": "Indexing/retrieval/agent framework for infra documentation."
+        },
+        {
+          "name": "Mastra",
+          "url": "https://github.com/mastra-ai/mastra",
+          "type": "Open-source",
+          "description": "TypeScript agent framework with built-in tools, workflows, RAG."
+        },
+        {
+          "name": "Microsoft Agent Framework",
+          "url": "https://github.com/microsoft/agent-framework",
+          "type": "Open-source",
+          "description": "Unified .NET/Python SDK merging Semantic Kernel and AutoGen with MCP/A2A support."
+        },
+        {
+          "name": "n8n",
+          "url": "https://github.com/n8n-io/n8n",
+          "type": "Open-source",
+          "description": "400+ integrations with AI agent capabilities for low-code automation."
+        },
+        {
+          "name": "Google ADK",
+          "url": "https://github.com/google/adk-python",
+          "type": "Open-source",
+          "description": "Code-first multi-agent framework with MCP tool integration and Cloud Run deployment."
+        },
+        {
+          "name": "OpenAI Agents SDK",
+          "url": "https://github.com/openai/openai-agents-python",
+          "type": "Open-source",
+          "description": "Multi-agent systems with handoffs, guardrails, and tracing."
+        },
+        {
+          "name": "Pydantic AI",
+          "url": "https://github.com/pydantic/pydantic-ai",
+          "type": "Open-source",
+          "description": "Type-safe agent framework with native MCP support and 25+ model providers."
+        },
+        {
+          "name": "smolagents",
+          "url": "https://github.com/huggingface/smolagents",
+          "type": "Open-source (Hugging Face)",
+          "description": "Minimalist agents that write and execute Python code with sandboxing."
+        },
+        {
+          "name": "Semantic Kernel",
+          "url": "https://github.com/microsoft/semantic-kernel",
+          "type": "Open-source",
+          "description": "Plugin-architecture SDK for integrating LLMs into applications."
+        },
+        {
+          "name": "Temporal",
+          "url": "https://github.com/temporalio/temporal",
+          "type": "Open-source",
+          "description": "Durable execution platform for long-running infra workflows."
+        },
+        {
+          "name": "DSPy",
+          "url": "https://github.com/stanfordnlp/dspy",
+          "type": "Open-source (Stanford)",
+          "description": "Programming framework for LMs with automatic prompt optimization."
+        },
+        {
+          "name": "OpenClaw",
+          "url": "https://github.com/openclaw/openclaw",
+          "type": "Open-source",
+          "description": "Personal AI assistant with 50+ integrations and fully local execution."
+        },
+        {
+          "name": "Wren AI",
+          "url": "https://github.com/Canner/WrenAI",
+          "type": "Open-source",
+          "description": "Text-to-SQL agent for infra analytics and reporting."
+        },
+        {
+          "name": "MetaGPT",
+          "url": "https://github.com/geekan/MetaGPT",
+          "type": "Open-source",
+          "description": "Simulates an AI software company \u2014 PM, architect, engineer, QA agents collaborating."
+        },
+        {
+          "name": "Letta",
+          "url": "https://github.com/letta-ai/letta",
+          "type": "Open-source",
+          "description": "Stateful agents with self-editing memory, evolved from MemGPT."
+        },
+        {
+          "name": "Strands Agents",
+          "url": "https://github.com/strands-agents",
+          "type": "Open-source (AWS)",
+          "description": "Model-driven SDK with Graph/Swarm/Workflow patterns and native MCP/A2A."
+        },
+        {
+          "name": "BeeAI Framework",
+          "url": "https://github.com/i-am-bee/beeai-framework",
+          "type": "Open-source (IBM/Linux Foundation)",
+          "description": "Multi-agent toolkit with Agent Communication Protocol for cross-framework interop."
+        },
+        {
+          "name": "Agno",
+          "url": "https://github.com/agno-agi/agno",
+          "type": "Open-source",
+          "description": "Lightweight multi-modal agent framework with built-in FastAPI runtime."
+        },
+        {
+          "name": "Mirascope",
+          "url": "https://github.com/Mirascope/mirascope",
+          "type": "Open-source",
+          "description": "Pythonic LLM toolkit with a unified provider interface and structured outputs."
+        },
+        {
+          "name": "Kubiya",
+          "url": "https://www.kubiya.ai/",
+          "type": "Commercial",
+          "description": "Agentic engineering platform with deterministic execution and Slack/Teams interface for Terraform/CI automation."
+        },
+        {
+          "name": "agentgateway",
+          "url": "https://github.com/agentgateway/agentgateway",
+          "type": "Open-source (Solo.io)",
+          "description": "Rust proxy with deep MCP/A2A protocol awareness and unified LLM routing."
+        },
+        {
+          "name": "open-multi-agent",
+          "url": "https://github.com/JackChen-me/open-multi-agent",
+          "type": "Open-source",
+          "description": "TypeScript orchestrator decomposing goals into a task DAG with live tracing."
+        },
+        {
+          "name": "Composio Agent Orchestrator",
+          "url": "https://github.com/ComposioHQ/agent-orchestrator",
+          "type": "Open-source",
+          "description": "Parallel coding-agent fleet manager with per-agent git worktrees."
+        }
+      ]
+    },
+    {
+      "name": "AI for Platform Engineering",
+      "tools": [
+        {
+          "name": "Backstage",
+          "url": "https://github.com/backstage/backstage",
+          "type": "Open-source (CNCF incubating, Spotify)",
+          "description": "Developer portal foundation with service catalogs and plugins."
+        },
+        {
+          "name": "Cortex",
+          "url": "https://www.cortex.io/",
+          "type": "Commercial",
+          "description": "AI-driven service maturity scorecards and ownership tracking."
+        },
+        {
+          "name": "Cycloid",
+          "url": "https://www.cycloid.io/",
+          "type": "Commercial",
+          "description": "AI-powered infra self-service with cost governance."
+        },
+        {
+          "name": "Humanitec",
+          "url": "https://humanitec.com/",
+          "type": "Commercial",
+          "description": "Platform orchestrator powering enterprise internal developer platforms."
+        },
+        {
+          "name": "Kratix",
+          "url": "https://github.com/syntasso/kratix",
+          "type": "Open-source",
+          "description": "Framework for platforms-as-a-product on Kubernetes."
+        },
+        {
+          "name": "Mia-Platform",
+          "url": "https://mia-platform.eu/",
+          "type": "Commercial",
+          "description": "AI-powered microservice orchestration and developer self-service."
+        },
+        {
+          "name": "OpsLevel",
+          "url": "https://www.opslevel.com/",
+          "type": "Commercial",
+          "description": "Service ownership platform with AI-powered maturity tracking."
+        },
+        {
+          "name": "Port",
+          "url": "https://www.getport.io/",
+          "type": "Commercial (open core)",
+          "description": "AI-powered software catalog and self-service actions."
+        },
+        {
+          "name": "Qovery",
+          "url": "https://www.qovery.com/",
+          "type": "Commercial",
+          "description": "Production-like developer environments with AI-assisted deployment."
+        },
+        {
+          "name": "Roadie",
+          "url": "https://roadie.io/",
+          "type": "Commercial",
+          "description": "Managed Backstage with AI-powered scaffolding and TechDocs hosting."
+        },
+        {
+          "name": "Upbound",
+          "url": "https://www.upbound.io/",
+          "type": "Commercial",
+          "description": "Universal cloud platform built on Crossplane for declarative infra APIs."
+        },
+        {
+          "name": "Score",
+          "url": "https://github.com/score-spec/spec",
+          "type": "Open-source",
+          "description": "Workload spec eliminating config drift between local and remote environments."
+        },
+        {
+          "name": "StackGen",
+          "url": "https://stackgen.com/",
+          "type": "Commercial",
+          "description": "Autonomous infra platform generating validated, policy-compliant Terraform from natural language."
+        },
+        {
+          "name": "OpenChoreo",
+          "url": "https://github.com/openchoreo/openchoreo",
+          "type": "Open-source (CNCF Sandbox)",
+          "description": "IDP exposing MCP servers so agents can deploy components and reason about platform state."
+        }
+      ]
+    },
+    {
+      "name": "AI for Database Operations",
+      "tools": [
+        {
+          "name": "Aiven AI",
+          "url": "https://aiven.io/",
+          "type": "Commercial",
+          "description": "Managed databases with AI-powered query optimization and anomaly detection."
+        },
+        {
+          "name": "Bytebase",
+          "url": "https://github.com/bytebase/bytebase",
+          "type": "Open-source",
+          "description": "Database DevOps/CI-CD with AI-assisted schema review and migration management."
+        },
+        {
+          "name": "CloudNativePG",
+          "url": "https://github.com/cloudnative-pg/cloudnative-pg",
+          "type": "Open-source",
+          "description": "Kubernetes operator managing full PostgreSQL cluster lifecycle with automated failover."
+        },
+        {
+          "name": "Drizzle",
+          "url": "https://github.com/drizzle-team/drizzle-orm",
+          "type": "Open-source",
+          "description": "TypeScript ORM with declarative, AI-friendly type-safe migrations."
+        },
+        {
+          "name": "Metabase",
+          "url": "https://github.com/metabase/metabase",
+          "type": "Open-source",
+          "description": "BI platform with natural-language querying for non-technical users."
+        },
+        {
+          "name": "Neon",
+          "url": "https://github.com/neondatabase/neon",
+          "type": "Open-source core / Commercial",
+          "description": "Serverless Postgres with branching and AI-powered query optimization."
+        },
+        {
+          "name": "OtterTune",
+          "url": "https://ottertune.com/",
+          "type": "Commercial",
+          "description": "Automatically tunes Postgres/MySQL/MariaDB configuration for performance."
+        },
+        {
+          "name": "pganalyze",
+          "url": "https://pganalyze.com/",
+          "type": "Commercial",
+          "description": "Postgres monitoring with AI-powered query recommendations and index advisor."
+        },
+        {
+          "name": "PlanetScale",
+          "url": "https://planetscale.com/",
+          "type": "Commercial",
+          "description": "Serverless MySQL with AI-powered schema change management and non-blocking deploys."
+        },
+        {
+          "name": "SchemaHero",
+          "url": "https://github.com/schemahero/schemahero",
+          "type": "Open-source",
+          "description": "Kubernetes-native declarative schema migrations."
+        },
+        {
+          "name": "Tembo",
+          "url": "https://tembo.io/",
+          "type": "Open-source",
+          "description": "Serverless Postgres with AI-driven optimization and error resolution."
+        },
+        {
+          "name": "Vitess",
+          "url": "https://github.com/vitessio/vitess",
+          "type": "Open-source (CNCF graduated)",
+          "description": "Horizontal scaling clustering system for MySQL."
+        },
+        {
+          "name": "Xata",
+          "url": "https://xata.io/",
+          "type": "Commercial",
+          "description": "Serverless database combining Postgres with OpenSearch for full-text/vector search."
+        }
+      ]
+    },
+    {
+      "name": "AI for Networking and Service Mesh",
+      "tools": [
+        {
+          "name": "Calico",
+          "url": "https://github.com/projectcalico/calico",
+          "type": "Open-source",
+          "description": "Cloud-native networking/security with AI-enhanced policy management."
+        },
+        {
+          "name": "Cilium",
+          "url": "https://github.com/cilium/cilium",
+          "type": "Open-source",
+          "description": "eBPF-based networking/observability for Kubernetes with the Hubble flow-analysis UI."
+        },
+        {
+          "name": "Consul",
+          "url": "https://github.com/hashicorp/consul",
+          "type": "Open-source core / Commercial (HashiCorp)",
+          "description": "Service mesh and discovery with intentions-based security."
+        },
+        {
+          "name": "Istio",
+          "url": "https://github.com/istio/istio",
+          "type": "Open-source (CNCF graduated)",
+          "description": "Traffic management, security, and observability for microservices."
+        },
+        {
+          "name": "Linkerd",
+          "url": "https://github.com/linkerd/linkerd2",
+          "type": "Open-source (CNCF graduated)",
+          "description": "Ultralight service mesh with automated mTLS and golden metrics."
+        },
+        {
+          "name": "Ngrok",
+          "url": "https://ngrok.com/",
+          "type": "Commercial",
+          "description": "Unified ingress with AI-powered traffic inspection and policy enforcement."
+        },
+        {
+          "name": "Traefik",
+          "url": "https://github.com/traefik/traefik",
+          "type": "Open-source",
+          "description": "Cloud-native proxy with automatic service discovery."
+        },
+        {
+          "name": "Envoy",
+          "url": "https://github.com/envoyproxy/envoy",
+          "type": "Open-source (CNCF graduated)",
+          "description": "High-performance proxy powering Istio's data plane."
+        }
+      ]
+    },
+    {
+      "name": "AI for Container Security and Supply Chain",
+      "tools": [
+        {
+          "name": "Chainguard",
+          "url": "https://www.chainguard.dev/",
+          "type": "Commercial",
+          "description": "Secure container images with zero known CVEs."
+        },
+        {
+          "name": "Cosign",
+          "url": "https://github.com/sigstore/cosign",
+          "type": "Open-source (Sigstore)",
+          "description": "Container signing and verification."
+        },
+        {
+          "name": "Docker Scout",
+          "url": "https://docs.docker.com/scout/",
+          "type": "Commercial",
+          "description": "AI-powered supply-chain analysis and CVE remediation guidance."
+        },
+        {
+          "name": "Grype",
+          "url": "https://github.com/anchore/grype",
+          "type": "Open-source",
+          "description": "Fast vulnerability scanner with SBOM-based analysis."
+        },
+        {
+          "name": "Harbor",
+          "url": "https://github.com/goharbor/harbor",
+          "type": "Open-source (CNCF graduated)",
+          "description": "Registry with vulnerability scanning and image signing."
+        },
+        {
+          "name": "Slim.AI",
+          "url": "https://www.slim.ai/",
+          "type": "Commercial",
+          "description": "AI-powered image minification and vulnerability reduction."
+        },
+        {
+          "name": "Copa",
+          "url": "https://github.com/project-copacetic/copacetic",
+          "type": "Open-source",
+          "description": "Directly patches image vulnerabilities without a full rebuild."
+        },
+        {
+          "name": "Syft",
+          "url": "https://github.com/anchore/syft",
+          "type": "Open-source",
+          "description": "SBOM generator for images and filesystems."
+        },
+        {
+          "name": "Wolfi",
+          "url": "https://github.com/wolfi-dev/os",
+          "type": "Open-source",
+          "description": "Community Linux distro for minimal container images with automated CVE patching."
+        }
+      ]
+    },
+    {
+      "name": "AI for Chaos Engineering and Reliability",
+      "tools": [
+        {
+          "name": "Chaos Mesh",
+          "url": "https://github.com/chaos-mesh/chaos-mesh",
+          "type": "Open-source (CNCF incubating)",
+          "description": "Cloud-native chaos platform with fault injection and workflow orchestration."
+        },
+        {
+          "name": "Gremlin",
+          "url": "https://www.gremlin.com/",
+          "type": "Commercial",
+          "description": "Enterprise chaos engineering with AI-powered reliability recommendations."
+        },
+        {
+          "name": "k6",
+          "url": "https://github.com/grafana/k6",
+          "type": "Open-source (Grafana)",
+          "description": "Scriptable load testing with AI-assisted test generation."
+        },
+        {
+          "name": "Litmus",
+          "url": "https://github.com/litmuschaos/litmus",
+          "type": "Open-source (CNCF incubating)",
+          "description": "Chaos framework with a hub of prebuilt experiments and GitOps integration."
+        },
+        {
+          "name": "Steadybit",
+          "url": "https://www.steadybit.com/",
+          "type": "Commercial",
+          "description": "AI-assisted experiment design and reliability validation."
+        },
+        {
+          "name": "Testkube",
+          "url": "https://github.com/kubeshop/testkube",
+          "type": "Open-source",
+          "description": "Kubernetes-native test orchestration for any testing tool."
+        },
+        {
+          "name": "Toxiproxy",
+          "url": "https://github.com/Shopify/toxiproxy",
+          "type": "Open-source (Shopify)",
+          "description": "TCP proxy simulating network conditions for resilience testing."
+        },
+        {
+          "name": "ChaosEater",
+          "url": "https://github.com/ntt-dkiku/chaos-eater",
+          "type": "Open-source (NTT)",
+          "description": "LLM-based system automating the whole chaos-engineering cycle across GPT/Claude/Gemini/Ollama."
+        }
+      ]
+    },
+    {
+      "name": "AI for Cloud Migration and Modernization",
+      "tools": [
+        {
+          "name": "AWS Application Discovery Service",
+          "url": "https://aws.amazon.com/application-discovery/",
+          "type": "Commercial",
+          "description": "Automated discovery and dependency mapping for migration planning."
+        },
+        {
+          "name": "AWS Migration Hub",
+          "url": "https://aws.amazon.com/migration-hub/",
+          "type": "Commercial",
+          "description": "Central migration tracking with AI-powered progress tracking."
+        },
+        {
+          "name": "Azure Migrate",
+          "url": "https://azure.microsoft.com/en-us/products/azure-migrate/",
+          "type": "Commercial",
+          "description": "Unified migration with AI-powered assessment and modernization tools."
+        },
+        {
+          "name": "Google Cloud Migrate",
+          "url": "https://cloud.google.com/solutions/migration-center",
+          "type": "Commercial",
+          "description": "AI-driven workload discovery and TCO analysis."
+        },
+        {
+          "name": "Konveyor",
+          "url": "https://github.com/konveyor/tackle2-hub",
+          "type": "Open-source",
+          "description": "Migration toolkit for modernizing apps to Kubernetes with AI-assisted code transformation."
+        },
+        {
+          "name": "Zerto",
+          "url": "https://www.zerto.com/",
+          "type": "Commercial",
+          "description": "Disaster recovery and workload migration with continuous data protection."
+        }
+      ]
+    },
+    {
+      "name": "AI for GitOps",
+      "tools": [
+        {
+          "name": "Argo Rollouts",
+          "url": "https://github.com/argoproj/argo-rollouts",
+          "type": "Open-source",
+          "description": "Progressive delivery controller with canary/blue-green releases and automated rollback analysis."
+        },
+        {
+          "name": "Flux",
+          "url": "https://github.com/fluxcd/flux2",
+          "type": "Open-source (CNCF graduated)",
+          "description": "GitOps toolkit with automated image updates and Helm/Kustomize reconciliation."
+        },
+        {
+          "name": "Helm",
+          "url": "https://github.com/helm/helm",
+          "type": "Open-source (CNCF graduated)",
+          "description": "Kubernetes package manager for templating AI workloads and infra components."
+        },
+        {
+          "name": "Kargo",
+          "url": "https://github.com/akuity/kargo",
+          "type": "Open-source",
+          "description": "Continuous promotion orchestrator across environments with GitOps principles."
+        },
+        {
+          "name": "Kustomize",
+          "url": "https://github.com/kubernetes-sigs/kustomize",
+          "type": "Open-source",
+          "description": "Declarative manifest customization without template engines."
+        },
+        {
+          "name": "Weave GitOps",
+          "url": "https://github.com/weaveworks/weave-gitops",
+          "type": "Commercial (open core)",
+          "description": "Enterprise GitOps with progressive delivery and policy enforcement."
+        },
+        {
+          "name": "Crossplane",
+          "url": "https://github.com/crossplane/crossplane",
+          "type": "Open-source (CNCF incubating)",
+          "description": "Cloud-native control planes with declarative infra APIs."
+        }
+      ]
+    },
+    {
+      "name": "System Prompt and Config Templates",
+      "tools": [
+        {
+          "name": "AGENTS.md",
+          "url": "https://agents.md/",
+          "type": "Open standard (OpenAI)",
+          "description": "Universal format for project-specific AI agent guidance, supported across Cursor, Claude Code, Codex, Gemini CLI."
+        },
+        {
+          "name": "Awesome CursorRules",
+          "url": "https://github.com/PatrickJS/awesome-cursorrules",
+          "type": "Open-source",
+          "description": "Community `.cursorrules` files for various project types."
+        },
+        {
+          "name": "Claude Skills",
+          "url": "https://github.com/anthropics/skills",
+          "type": "Open-source (Anthropic)",
+          "description": "Official repository of agent skills for specialized DevOps workflows."
+        },
+        {
+          "name": "GitHub Copilot Custom Instructions",
+          "url": "https://docs.github.com/en/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot",
+          "type": "Official docs",
+          "description": "Guide for `copilot-instructions.md` per-repo customization."
+        }
+      ]
+    },
+    {
+      "name": "Community and Newsletters",
+      "tools": [
+        {
+          "name": "CNCF Slack",
+          "url": "https://slack.cncf.io/",
+          "type": "Open-source",
+          "description": "The default hub for CNCF project discussion, including most AI-adjacent Sandbox/incubating projects on this list."
+        },
+        {
+          "name": "SRE Weekly",
+          "url": "https://sreweekly.com/",
+          "type": "Open-source",
+          "description": "Curated weekly SRE news and incident write-ups."
+        },
+        {
+          "name": "DevOps Weekly",
+          "url": "https://www.devopsweekly.com/",
+          "type": "Open-source",
+          "description": "Long-running weekly DevOps roundup."
+        }
+      ]
+    }
+  ],
+  "total_tools": 407,
+  "total_categories": 20
+}

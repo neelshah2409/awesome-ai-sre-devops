@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Awesome AI SRE & DevOps — a curated, searchable directory</title>
+<meta name="description" content="A searchable, filterable directory of AI tools for DevOps, SRE, and Platform Engineering. Open-source and commercial, sorted by use case.">
+<meta property="og:title" content="Awesome AI SRE & DevOps">
+<meta property="og:description" content="A searchable, filterable directory of AI tools for DevOps, SRE, and Platform Engineering.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#12151A;
+    --panel:#1A1E26;
+    --panel-hover:#20242E;
+    --border:#262B35;
+    --text:#E7EAEE;
+    --muted:#8A93A3;
+    --amber:#E8B657;
+    --teal:#4FD1C5;
+    --slate:#7C93C9;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Inter',system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;}
+
+  /* ---------- Hero: terminal console ---------- */
+  .hero{
+    border-bottom:1px solid var(--border);
+    padding:56px 24px 40px;
+  }
+  .hero-inner{max-width:900px;margin:0 auto;}
+  .eyebrow{
+    font-family:'JetBrains Mono',monospace;
+    font-size:13px;
+    color:var(--muted);
+    letter-spacing:0.02em;
+  }
+  h1{
+    font-family:'Space Grotesk',sans-serif;
+    font-weight:700;
+    font-size:clamp(28px,4vw,42px);
+    margin:8px 0 6px;
+    letter-spacing:-0.01em;
+  }
+  .tagline{color:var(--muted);font-size:16px;max-width:560px;line-height:1.5;margin:0 0 28px;}
+
+  .console{
+    background:#0D0F13;
+    border:1px solid var(--border);
+    border-radius:10px;
+    font-family:'JetBrains Mono',monospace;
+    font-size:14px;
+    line-height:1.7;
+    padding:20px 22px;
+    overflow-x:auto;
+  }
+  .console .prompt{color:var(--teal);}
+  .console .cmd{color:var(--text);}
+  .console .out{color:var(--muted);}
+  .console .stat{color:var(--amber);font-weight:500;}
+  .cursor{
+    display:inline-block;
+    width:8px;height:16px;
+    background:var(--amber);
+    vertical-align:text-bottom;
+    animation:blink 1s steps(1) infinite;
+  }
+  @keyframes blink{50%{opacity:0;}}
+
+  .repo-links{margin-top:20px;font-size:14px;}
+  .repo-links a{color:var(--slate);text-decoration:none;border-bottom:1px solid transparent;}
+  .repo-links a:hover{border-bottom-color:var(--slate);}
+  .repo-links span{color:var(--muted);margin:0 8px;}
+
+  /* ---------- Controls ---------- */
+  .controls{
+    max-width:900px;margin:28px auto 0;padding:0 24px;
+    display:flex;gap:10px;flex-wrap:wrap;align-items:center;
+  }
+  #search{
+    flex:1;min-width:220px;
+    background:var(--panel);
+    border:1px solid var(--border);
+    color:var(--text);
+    font-family:'JetBrains Mono',monospace;
+    font-size:14px;
+    padding:11px 14px;
+    border-radius:8px;
+    outline:none;
+  }
+  #search:focus{border-color:var(--amber);}
+  #search::placeholder{color:var(--muted);}
+
+  .chip{
+    font-family:'JetBrains Mono',monospace;
+    font-size:12.5px;
+    padding:7px 12px;
+    border-radius:6px;
+    border:1px solid var(--border);
+    background:var(--panel);
+    color:var(--muted);
+    cursor:pointer;
+    user-select:none;
+  }
+  .chip.active{color:var(--bg);background:var(--amber);border-color:var(--amber);font-weight:600;}
+
+  /* ---------- List ---------- */
+  main{max-width:900px;margin:0 auto;padding:28px 24px 80px;}
+  .category{margin-bottom:36px;}
+  .category h2{
+    font-family:'Space Grotesk',sans-serif;
+    font-size:15px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:var(--muted);
+    border-bottom:1px solid var(--border);
+    padding-bottom:10px;
+    margin:0 0 14px;
+  }
+  .tool{
+    display:flex;
+    justify-content:space-between;
+    gap:16px;
+    padding:14px 0;
+    border-bottom:1px solid var(--border);
+  }
+  .tool:last-child{border-bottom:none;}
+  .tool-main a{
+    font-weight:600;
+    font-size:15px;
+    text-decoration:none;
+  }
+  .tool-main a:hover{color:var(--amber);}
+  .tool-desc{color:var(--muted);font-size:13.5px;margin-top:3px;max-width:560px;line-height:1.5;}
+  .tool-tag{
+    font-family:'JetBrains Mono',monospace;
+    font-size:11px;
+    white-space:nowrap;
+    height:fit-content;
+    padding:4px 9px;
+    border-radius:5px;
+    border:1px solid var(--border);
+  }
+  .tag-oss{color:var(--teal);border-color:rgba(79,209,197,0.35);}
+  .tag-commercial{color:var(--slate);border-color:rgba(124,147,201,0.35);}
+
+  .empty{color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;padding:40px 0;text-align:center;}
+
+  footer{
+    max-width:900px;margin:0 auto;padding:24px;
+    border-top:1px solid var(--border);
+    color:var(--muted);font-size:13px;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;
+  }
+  footer a{color:var(--muted);}
+  footer a:hover{color:var(--amber);}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">devops / sre / ai</div>
+    <h1>Awesome AI SRE &amp; DevOps</h1>
+    <p class="tagline">A curated, searchable directory of AI tools for DevOps, SRE, and Platform Engineering — filtered by what problem you actually have.</p>
+
+    <div class="console">
+<span class="prompt">$</span> <span class="cmd">awesome-ai-sre-devops --status</span><br>
+<span class="out" id="console-out">loading index...</span><span class="cursor"></span>
+    </div>
+
+    <div class="repo-links">
+      <a href="https://github.com/YOUR_USERNAME/awesome-ai-sre-devops" target="_blank" rel="noopener">View on GitHub</a>
+      <span>·</span>
+      <a href="https://github.com/YOUR_USERNAME/awesome-ai-sre-devops/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Submit a tool</a>
+      <span>·</span>
+      <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener">@YOUR_USERNAME</a>
+    </div>
+  </div>
+</div>
+
+<div class="controls">
+  <input id="search" type="text" placeholder="$ grep -i 'kubernetes cost' ...">
+  <div class="chip active" data-filter="all">all</div>
+  <div class="chip" data-filter="Open-source">open-source</div>
+  <div class="chip" data-filter="Commercial">commercial</div>
+</div>
+
+<main id="results"></main>
+
+<footer>
+  <span>MIT/CC0 licensed list. Not affiliated with any vendor listed.</span>
+  <span>Data regenerated automatically from <a href="https://github.com/YOUR_USERNAME/awesome-ai-sre-devops/blob/main/README.md" target="_blank" rel="noopener">README.md</a></span>
+</footer>
+
+<script>
+let DATA = { categories: [], total_tools: 0, total_categories: 0 };
+let activeFilter = 'all';
+
+async function loadData() {
+  try {
+    const res = await fetch('./data.json', { cache: 'no-store' });
+    DATA = await res.json();
+  } catch (e) {
+    DATA = { categories: [], total_tools: 0, total_categories: 0 };
+  }
+  document.getElementById('console-out').innerHTML =
+    `<span class="stat">${DATA.total_tools}</span> tools indexed across <span class="stat">${DATA.total_categories}</span> categories. ready.`;
+  render();
+}
+
+function matchesType(type, filter) {
+  if (filter === 'all') return true;
+  return type.toLowerCase().includes(filter.toLowerCase());
+}
+
+function render() {
+  const q = document.getElementById('search').value.trim().toLowerCase();
+  const container = document.getElementById('results');
+  container.innerHTML = '';
+  let shown = 0;
+
+  DATA.categories.forEach(cat => {
+    const tools = cat.tools.filter(t => {
+      if (!matchesType(t.type, activeFilter)) return false;
+      if (!q) return true;
+      const hay = (t.name + ' ' + t.description + ' ' + cat.name).toLowerCase();
+      return hay.includes(q);
+    });
+    if (tools.length === 0) return;
+
+    shown += tools.length;
+    const section = document.createElement('div');
+    section.className = 'category';
+    const isOss = t => t.type.toLowerCase().includes('open-source');
+    section.innerHTML = `
+      <h2>${cat.name}</h2>
+      ${tools.map(t => `
+        <div class="tool">
+          <div class="tool-main">
+            <a href="${t.url}" target="_blank" rel="noopener">${t.name}</a>
+            <div class="tool-desc">${t.description}</div>
+          </div>
+          <div class="tool-tag ${isOss(t) ? 'tag-oss' : 'tag-commercial'}">${t.type}</div>
+        </div>
+      `).join('')}
+    `;
+    container.appendChild(section);
+  });
+
+  if (shown === 0) {
+    container.innerHTML = '<div class="empty">no matches — try a broader term, or <a href="https://github.com/YOUR_USERNAME/awesome-ai-sre-devops/blob/main/CONTRIBUTING.md" style="color:var(--amber)">suggest this tool</a></div>';
+  }
+}
+
+document.getElementById('search').addEventListener('input', render);
+document.querySelectorAll('.chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    activeFilter = chip.dataset.filter;
+    render();
+  });
+});
+
+loadData();
+</script>
+
+</body>
+</html>
