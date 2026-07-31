@@ -46,12 +46,6 @@
           "description": "Autonomous VS Code agent that can run terminal commands and edit files directly, good for teams wanting an open, extensible agent inside their existing editor."
         },
         {
-          "name": "Codex",
-          "url": "https://openai.com/codex/",
-          "type": "Commercial (OpenAI)",
-          "description": "Cloud-sandboxed autonomous coding agent that's strong at generating IaC from a plain-language description of the desired end state."
-        },
-        {
           "name": "Continue",
           "url": "https://github.com/continuedev/continue",
           "type": "Open-source",
@@ -2543,6 +2537,6 @@
       ]
     }
   ],
-  "total_tools": 407,
+  "total_tools": 406,
   "total_categories": 20
 }
