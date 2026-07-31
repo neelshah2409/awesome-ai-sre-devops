@@ -291,7 +291,7 @@ AI tools purpose-built for cluster management, troubleshooting, and operations.
 
 Model Context Protocol servers give AI assistants (Claude, ChatGPT, Cursor) direct, structured access to real infra tools instead of copy-pasted context.
 
-- **[Atlassian MCP Server](https://www.npmjs.com/package/@anthropic/mcp-atlassian)** — Jira/Confluence: query issues, create tickets, search docs.
+- **[Atlassian MCP Server](https://www.atlassian.com/blog/announcements/remote-mcp-server)** — Jira/Confluence: query issues, create tickets, search docs.
 - **[AWS MCP Servers](https://awslabs.github.io/mcp/)** — Official AWS suite covering Terraform, CDK, CloudFormation, Lambda, S3, CloudWatch, ECS.
 - **[Cloudflare MCP Server](https://github.com/cloudflare/mcp-server-cloudflare)** — Manage Workers, KV, R2, and DNS.
 - **[Datadog MCP Server](https://github.com/datadog-labs/mcp-server)** — Query metrics, monitors, dashboards, logs.
@@ -316,7 +316,7 @@ Model Context Protocol servers give AI assistants (Claude, ChatGPT, Cursor) dire
 - **[Pulumi MCP Server](https://www.pulumi.com/docs/ai/mcp-server/)** — Infra previews, resource lookups, delegates to Pulumi Neo.
 - **[Vercel MCP Server](https://github.com/vercel/mcp-adapter)** — Serverless deployment and edge function management.
 - **[Lens MCP Server](https://lenshq.io/)** — Built into Lens Kubernetes IDE, native EKS/AKS integration.
-- **[StackGen MCP Server](https://docs.stackgen.com/docs/stackbuilder/mcp-integration)** — Generates policy-compliant Terraform/K8s/Helm from natural language.
+- **[StackGen MCP Server](https://docs.stackgen.com/docs/stackgen-mcp)** — Generates policy-compliant Terraform/K8s/Helm from natural language.
 - **[GCP gcloud MCP Server](https://github.com/googleapis/gcloud-mcp)** — Interact with GCP resources via gcloud CLI in natural language.
 - **[Google Cloud Run MCP Server](https://github.com/GoogleCloudPlatform/cloud-run-mcp)** — Deploy and manage Cloud Run apps.
 - **[DigitalOcean MCP Server](https://github.com/digitalocean/digitalocean-mcp)** — Droplets, App Platform, databases, DOKS, networking.
@@ -393,7 +393,7 @@ Model Context Protocol servers give AI assistants (Claude, ChatGPT, Cursor) dire
 - **[Axiom](https://axiom.co/)** — *Commercial.* AI-powered query generation with unlimited data retention.
 - **[Elasticsearch](https://github.com/elastic/elasticsearch)** — *Open-source.* Foundation for AI log analysis via ES|QL, vector search, and ML anomaly detection.
 - **[Grafana Loki](https://github.com/grafana/loki)** — *Open-source.* Log aggregation designed for cloud-native environments, pairs with Grafana AI.
-- **[LogAI](https://github.com/salesforce/logai)** — *Open-source (Salesforce).* Toolkit for AI-powered log anomaly detection, clustering, and summarization.
+- **[LogAI](https://www.salesforce.com/blog/logai/)** — *Open-source (Salesforce).* Toolkit for AI-powered log anomaly detection, clustering, and summarization.
 - **[OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector)** — *Open-source.* Vendor-agnostic telemetry pipeline feeding most AI analysis tools.
 - **[Parseable](https://github.com/parseablehq/parseable)** — *Open-source (Rust).* Cloud-native log storage with AI-powered analysis and alerting.
 - **[Vector](https://github.com/vectordotdev/vector)** — *Open-source.* High-performance pipeline for routing logs/metrics/traces to AI analysis backends.
