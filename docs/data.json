@@ -1222,7 +1222,7 @@
       "tools": [
         {
           "name": "Atlassian MCP Server",
-          "url": "https://www.npmjs.com/package/@anthropic/mcp-atlassian",
+          "url": "https://www.atlassian.com/blog/announcements/remote-mcp-server",
           "type": "Open-source",
           "description": "Jira/Confluence: query issues, create tickets, search docs."
         },
@@ -1372,7 +1372,7 @@
         },
         {
           "name": "StackGen MCP Server",
-          "url": "https://docs.stackgen.com/docs/stackbuilder/mcp-integration",
+          "url": "https://docs.stackgen.com/docs/stackgen-mcp",
           "type": "Open-source",
           "description": "Generates policy-compliant Terraform/K8s/Helm from natural language."
         },
@@ -1808,7 +1808,7 @@
         },
         {
           "name": "LogAI",
-          "url": "https://github.com/salesforce/logai",
+          "url": "https://www.salesforce.com/blog/logai/",
           "type": "Open-source (Salesforce)",
           "description": "Toolkit for AI-powered log anomaly detection, clustering, and summarization."
         },
