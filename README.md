@@ -1,8 +1,8 @@
 # Awesome AI SRE & DevOps [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-[![Lint](https://github.com/YOUR_USERNAME/awesome-ai-sre-devops/actions/workflows/lint.yml/badge.svg)](https://github.com/YOUR_USERNAME/awesome-ai-sre-devops/actions/workflows/lint.yml)
-[![Link Check](https://github.com/YOUR_USERNAME/awesome-ai-sre-devops/actions/workflows/link-check.yml/badge.svg)](https://github.com/YOUR_USERNAME/awesome-ai-sre-devops/actions/workflows/link-check.yml)
-[![Discover New Tools](https://github.com/YOUR_USERNAME/awesome-ai-sre-devops/actions/workflows/discover-tools.yml/badge.svg)](https://github.com/YOUR_USERNAME/awesome-ai-sre-devops/actions/workflows/discover-tools.yml)
+[![Lint](https://github.com/neelshah2409/awesome-ai-sre-devops/actions/workflows/lint.yml/badge.svg)](https://github.com/YOUR_USERNAME/awesome-ai-sre-devops/actions/workflows/lint.yml)
+[![Link Check](https://github.com/neelshah2409/awesome-ai-sre-devops/actions/workflows/link-check.yml/badge.svg)](https://github.com/YOUR_USERNAME/awesome-ai-sre-devops/actions/workflows/link-check.yml)
+[![Discover New Tools](https://github.com/neelshah2409/awesome-ai-sre-devops/actions/workflows/discover-tools.yml/badge.svg)](https://github.com/YOUR_USERNAME/awesome-ai-sre-devops/actions/workflows/discover-tools.yml)
 [![Site](https://img.shields.io/badge/site-live-blue)](https://YOUR_USERNAME.github.io/awesome-ai-sre-devops/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
