@@ -47,7 +47,7 @@
         },
         {
           "name": "Codex",
-          "url": "https://openai.com/index/openai-codex/",
+          "url": "https://openai.com/codex/",
           "type": "Commercial (OpenAI)",
           "description": "Cloud-sandboxed autonomous coding agent that's strong at generating IaC from a plain-language description of the desired end state."
         },
