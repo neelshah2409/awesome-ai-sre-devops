@@ -1,0 +1,43 @@
+name: Discover New Tools
+
+on:
+  schedule:
+    - cron: '0 8 * * 1'  # every Monday 08:00 UTC
+  workflow_dispatch: {}   # lets you trigger it manually from the Actions tab
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install deps
+        run: pip install requests
+
+      - name: Run discovery script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/discover_tools.py
+
+      - name: Open PR with candidates
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore: weekly candidate tools for review"
+          branch: bot/discover-tools
+          title: "🤖 New candidate tools found this week"
+          body: |
+            Automated weekly scan. Review each candidate in `CANDIDATES.md`,
+            move the ones worth keeping into `README.md` under the right
+            category, then delete `CANDIDATES.md` before merging.
+
+            Nothing here is auto-added to the live list.
+          delete-branch: true

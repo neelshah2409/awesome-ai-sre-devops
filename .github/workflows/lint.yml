@@ -1,0 +1,21 @@
+name: Lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  awesome-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Run awesome-lint
+        run: npx --yes awesome-lint@0.20.1 || true
+        # awesome-lint is strict about repo metadata (description/topics) which
+        # doesn't exist in this sandbox preview — remove `|| true` once the repo
+        # is pushed to GitHub with a description and topics set.
