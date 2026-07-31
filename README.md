@@ -171,6 +171,7 @@ AI tools purpose-built for cluster management, troubleshooting, and operations.
 
 ## AI Incident Response and AI SRE Agents
 
+- **[Aiden for SRE]([https://www.bigpanda.io/](https://stackgen.com/product/aiden-for-sre))** — *Commercial.* Aiden that acts autonomously on recurring incidents and works complex ones alongside your team through to resolution — policy-bound and fully auditable.
 - **[BigPanda](https://www.bigpanda.io/)** — *Commercial.* AIOps event correlation and automated root cause analysis across hybrid environments.
 - **[Blameless](https://www.blameless.com/)** — *Commercial.* SRE platform with AI-powered incident management and automated retrospectives.
 - **[FireHydrant](https://firehydrant.com/)** — *Commercial.* Incident management with AI-generated retrospectives and automated status pages.
