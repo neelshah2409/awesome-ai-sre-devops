@@ -76,7 +76,7 @@ AI-powered coding agents that write, review, and maintain infrastructure code �
 - **[Clanker](https://github.com/bgdnvk/clanker)** — *Open-source.* Autonomous CLI agent for systems engineering across AWS, GCP, and Cloudflare without needing a full IDE.
 - **[Claude Code](https://docs.claude.com/en/docs/claude-code)** — *Commercial (Anthropic).* Agentic terminal coding tool strong at large multi-file Terraform refactors and debugging across an entire infrastructure repo at once.
 - **[Cline](https://github.com/cline/cline)** — *Open-source.* Autonomous VS Code agent that can run terminal commands and edit files directly, good for teams wanting an open, extensible agent inside their existing editor.
-- **[Codex](https://openai.com/index/openai-codex/)** — *Commercial (OpenAI).* Cloud-sandboxed autonomous coding agent that's strong at generating IaC from a plain-language description of the desired end state.
+- **[Codex](https://openai.com/codex/)** — *Commercial (OpenAI).* Cloud-sandboxed autonomous coding agent that's strong at generating IaC from a plain-language description of the desired end state.
 - **[Continue](https://github.com/continuedev/continue)** — *Open-source.* Editor-agnostic AI assistant for VS Code and JetBrains that supports local models, a good fit for air-gapped or compliance-sensitive infra work.
 - **[Cursor](https://cursor.com)** — *Commercial.* AI-first IDE with inline multi-file editing, popular for fast iterative Terraform/YAML work.
 - **[Devin](https://devin.ai/)** — *Commercial (Cognition).* Fully autonomous software engineer that can take an infra task from planning through deployment with minimal supervision.
@@ -536,9 +536,6 @@ Model Context Protocol servers give AI assistants (Claude, ChatGPT, Cursor) dire
 
 ### Books
 - **[Site Reliability Engineering](https://sre.google/books/)** — Google's foundational SRE book; the practices today's AI SRE tools automate.
-- **[Observability Engineering](https://www.oreilly.com/library/view/observability-engineering-2nd/9781098179915/)** — Second edition covering OpenTelemetry and AI-assisted instrumentation.
-- **[LLMOps](https://www.oreilly.com/library/view/llmops/9781098154196/)** — Running LLM systems at scale: monitoring, evaluation, governance, cost.
-- **[AI Engineering](https://www.oreilly.com/library/view/ai-engineering/9781098166298/)** — End-to-end guide to building with foundation models: RAG, fine-tuning, agents, evaluation.
 - **[Platform Engineering on Kubernetes](https://www.manning.com/books/platform-engineering-on-kubernetes)** — Building internal platforms with Kubernetes, GitOps, and developer self-service.
 
 ### Certifications
