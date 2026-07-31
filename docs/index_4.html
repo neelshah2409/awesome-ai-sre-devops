@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Awesome AI SRE & DevOps — a curated, searchable directory</title>
+<meta name="description" content="A searchable, filterable directory of 400+ AI tools for DevOps, SRE, and Platform Engineering. Open-source and commercial, sorted by category.">
+<meta property="og:title" content="Awesome AI SRE & DevOps">
+<meta property="og:description" content="A searchable, filterable directory of 400+ AI tools for DevOps, SRE, and Platform Engineering.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#12151A;
+    --panel:#1A1E26;
+    --panel-hover:#20242E;
+    --border:#262B35;
+    --text:#E7EAEE;
+    --muted:#8A93A3;
+    --amber:#E8B657;
+    --teal:#4FD1C5;
+    --slate:#7C93C9;
+    --header-h:60px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Inter',system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;}
+  ::selection{background:var(--amber);color:#12151A;}
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky;top:0;z-index:100;
+    height:var(--header-h);
+    display:flex;align-items:center;gap:14px;
+    padding:0 20px;
+    background:rgba(18,21,26,0.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--border);
+  }
+  .brand{
+    display:flex;align-items:center;gap:8px;
+    font-family:'Space Grotesk',sans-serif;
+    font-weight:600;
+    font-size:15px;
+    white-space:nowrap;
+    text-decoration:none;
+  }
+  .brand .dot{width:8px;height:8px;border-radius:50%;background:var(--amber);flex-shrink:0;}
+  .brand .sub{color:var(--muted);font-weight:400;font-size:13px;display:none;}
+
+  #cats-toggle{
+    display:flex;align-items:center;gap:6px;
+    background:var(--panel);
+    border:1px solid var(--border);
+    color:var(--text);
+    font-family:'Inter',sans-serif;
+    font-size:13.5px;
+    font-weight:500;
+    padding:8px 12px;
+    border-radius:7px;
+    cursor:pointer;
+    white-space:nowrap;
+  }
+  #cats-toggle:hover{background:var(--panel-hover);}
+  #cats-toggle svg{width:14px;height:14px;flex-shrink:0;}
+
+  #search{
+    flex:1;min-width:0;
+    background:var(--panel);
+    border:1px solid var(--border);
+    color:var(--text);
+    font-family:'JetBrains Mono',monospace;
+    font-size:13.5px;
+    padding:9px 12px;
+    border-radius:7px;
+    outline:none;
+  }
+  #search:focus{border-color:var(--amber);}
+  #search::placeholder{color:var(--muted);}
+
+  .header-links{display:flex;align-items:center;gap:14px;font-size:13px;color:var(--muted);white-space:nowrap;}
+  .header-links a{text-decoration:none;}
+  .header-links a:hover{color:var(--amber);}
+  .header-links .sep{display:none;}
+
+  @media (min-width:700px){
+    .brand .sub{display:inline;}
+    .header-links .sep{display:inline;}
+  }
+
+  /* ---------- Layout: sidebar + main ---------- */
+  .layout{display:flex;max-width:1180px;margin:0 auto;}
+
+  #sidebar{
+    width:230px;flex-shrink:0;
+    position:sticky;
+    top:var(--header-h);
+    height:calc(100vh - var(--header-h));
+    overflow-y:auto;
+    padding:22px 10px 22px 20px;
+    display:none;
+  }
+  #sidebar::-webkit-scrollbar{width:6px;}
+  #sidebar::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px;}
+  .sidebar-label{
+    font-family:'JetBrains Mono',monospace;
+    font-size:11px;text-transform:uppercase;letter-spacing:0.08em;
+    color:var(--muted);margin:0 0 10px 10px;
+  }
+  .sidebar-link{
+    display:flex;justify-content:space-between;gap:8px;
+    padding:7px 10px;
+    border-radius:6px;
+    font-size:13px;
+    color:var(--muted);
+    text-decoration:none;
+    border-left:2px solid transparent;
+    cursor:pointer;
+  }
+  .sidebar-link:hover{background:var(--panel);color:var(--text);}
+  .sidebar-link.active{color:var(--amber);border-left-color:var(--amber);background:var(--panel);}
+  .sidebar-link .count{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);}
+
+  @media (min-width:900px){
+    #sidebar{display:block;}
+    #cats-toggle{display:none;}
+  }
+
+  /* Mobile drawer (reuses the same #sidebar markup via JS move, simplified: separate overlay) */
+  #drawer-overlay{
+    display:none;position:fixed;inset:0;z-index:200;
+    background:rgba(10,11,14,0.6);
+  }
+  #drawer-overlay.open{display:block;}
+  #drawer{
+    position:fixed;top:0;left:0;bottom:0;z-index:201;
+    width:min(78vw,300px);
+    background:var(--panel);
+    border-right:1px solid var(--border);
+    padding:18px 10px;
+    overflow-y:auto;
+    transform:translateX(-100%);
+    transition:transform 0.22s ease;
+  }
+  #drawer-overlay.open #drawer{transform:translateX(0);}
+  #drawer .sidebar-label{margin-left:10px;}
+  #drawer-close{
+    background:none;border:none;color:var(--muted);
+    font-size:20px;padding:4px 10px;cursor:pointer;
+  }
+
+  main{flex:1;min-width:0;padding:0 24px 80px;}
+
+  /* ---------- Hero ---------- */
+  .hero{padding:32px 0 24px;border-bottom:1px solid var(--border);}
+  .eyebrow{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--muted);letter-spacing:0.02em;}
+  h1{
+    font-family:'Space Grotesk',sans-serif;font-weight:700;
+    font-size:clamp(24px,3.4vw,34px);margin:6px 0 6px;letter-spacing:-0.01em;
+  }
+  .tagline{color:var(--muted);font-size:15px;max-width:560px;line-height:1.5;margin:0 0 20px;}
+
+  .console{
+    background:#0D0F13;border:1px solid var(--border);border-radius:9px;
+    font-family:'JetBrains Mono',monospace;font-size:13.5px;line-height:1.7;
+    padding:16px 18px;overflow-x:auto;
+  }
+  .console .prompt{color:var(--teal);}
+  .console .stat{color:var(--amber);font-weight:500;}
+  .cursor{display:inline-block;width:7px;height:14px;background:var(--amber);vertical-align:text-bottom;animation:blink 1s steps(1) infinite;}
+  @keyframes blink{50%{opacity:0;}}
+
+  /* ---------- Controls ---------- */
+  .controls{
+    position:sticky;top:var(--header-h);z-index:10;
+    background:var(--bg);
+    padding:16px 0;
+    display:flex;gap:8px;flex-wrap:wrap;align-items:center;
+    border-bottom:1px solid var(--border);
+  }
+  .chip{
+    font-family:'JetBrains Mono',monospace;font-size:12px;
+    padding:6px 11px;border-radius:6px;border:1px solid var(--border);
+    background:var(--panel);color:var(--muted);cursor:pointer;user-select:none;
+  }
+  .chip.active{color:var(--bg);background:var(--amber);border-color:var(--amber);font-weight:600;}
+  .result-count{margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted);}
+
+  /* ---------- Category sections + card grid ---------- */
+  .category{padding:34px 0 6px;scroll-margin-top:calc(var(--header-h) + 70px);}
+  .category h2{
+    font-family:'Space Grotesk',sans-serif;font-size:17px;font-weight:600;
+    margin:0 0 4px;display:flex;align-items:baseline;gap:8px;
+  }
+  .category h2 .n{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:400;color:var(--muted);}
+  .category .cat-desc{color:var(--muted);font-size:13px;margin:0 0 16px;}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;}
+  .tool{
+    background:var(--panel);border:1px solid var(--border);
+    border-left:3px solid var(--border);
+    border-radius:8px;padding:14px 15px;
+    display:flex;flex-direction:column;gap:6px;
+  }
+  .tool.oss{border-left-color:var(--teal);}
+  .tool.commercial{border-left-color:var(--slate);}
+  .tool-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;}
+  .tool-main a{font-weight:600;font-size:14.5px;text-decoration:none;}
+  .tool-main a:hover{color:var(--amber);}
+  .tool-tag{
+    font-family:'JetBrains Mono',monospace;font-size:10.5px;white-space:nowrap;
+    padding:3px 7px;border-radius:5px;border:1px solid var(--border);flex-shrink:0;
+  }
+  .tag-oss{color:var(--teal);border-color:rgba(79,209,197,0.35);}
+  .tag-commercial{color:var(--slate);border-color:rgba(124,147,201,0.35);}
+  .tool-desc{color:var(--muted);font-size:13px;line-height:1.5;}
+
+  .empty{color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:13px;padding:50px 0;text-align:center;}
+
+  /* ---------- Back to top ---------- */
+  #top-btn{
+    position:fixed;bottom:22px;right:22px;z-index:50;
+    width:40px;height:40px;border-radius:50%;
+    background:var(--panel);border:1px solid var(--border);color:var(--muted);
+    display:none;align-items:center;justify-content:center;cursor:pointer;
+  }
+  #top-btn.show{display:flex;}
+  #top-btn:hover{color:var(--amber);border-color:var(--amber);}
+
+  footer{
+    max-width:1180px;margin:0 auto;padding:24px;
+    border-top:1px solid var(--border);color:var(--muted);font-size:13px;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;
+  }
+  footer a{color:var(--muted);}
+  footer a:hover{color:var(--amber);}
+
+  @media (max-width:640px){
+    .brand span:not(.dot){font-size:13px;}
+    main{padding:0 16px 60px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="#" class="brand"><span class="dot"></span> awesome-ai-sre-devops <span class="sub">/ devops · sre · ai</span></a>
+  <button id="cats-toggle" aria-label="Browse categories">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="14" y2="18"/></svg>
+    Categories
+  </button>
+  <input id="search" type="text" placeholder="$ grep -i 'kubernetes cost' ...">
+  <div class="header-links">
+    <a href="https://github.com/neelshah2409/awesome-ai-sre-devops" target="_blank" rel="noopener">GitHub</a>
+    <span class="sep">·</span>
+    <a class="sep" href="https://github.com/neelshah2409/awesome-ai-sre-devops/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Submit a tool</a>
+  </div>
+</header>
+
+<div id="drawer-overlay">
+  <div id="drawer">
+    <div style="display:flex;justify-content:space-between;align-items:center;">
+      <div class="sidebar-label">Categories</div>
+      <button id="drawer-close" aria-label="Close">&times;</button>
+    </div>
+    <nav id="drawer-nav"></nav>
+  </div>
+</div>
+
+<div class="layout">
+  <aside id="sidebar">
+    <div class="sidebar-label">Categories</div>
+    <nav id="sidebar-nav"></nav>
+  </aside>
+
+  <main>
+    <div class="hero">
+      <div class="eyebrow">devops / sre / ai</div>
+      <h1>Awesome AI SRE &amp; DevOps</h1>
+      <p class="tagline">A curated, searchable directory of AI tools for DevOps, SRE, and Platform Engineering — jump straight to a category from the header, or search across all of them.</p>
+      <div class="console">
+<span class="prompt">$</span> awesome-ai-sre-devops --status<br>
+<span id="console-out">loading index...</span><span class="cursor"></span>
+      </div>
+    </div>
+
+    <div class="controls">
+      <div class="chip active" data-filter="all">all</div>
+      <div class="chip" data-filter="Open-source">open-source</div>
+      <div class="chip" data-filter="Commercial">commercial</div>
+      <div class="result-count" id="result-count"></div>
+    </div>
+
+    <div id="results"></div>
+  </main>
+</div>
+
+<footer>
+  <span>MIT/CC0 licensed list. Not affiliated with any vendor listed.</span>
+  <span>Data regenerated automatically from <a href="https://github.com/neelshah2409/awesome-ai-sre-devops/blob/main/README.md" target="_blank" rel="noopener">README.md</a></span>
+</footer>
+
+<button id="top-btn" aria-label="Back to top">↑</button>
+
+<script>
+let DATA = { categories: [], total_tools: 0, total_categories: 0 };
+let activeFilter = 'all';
+
+function slugify(name){
+  return 'cat-' + name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+}
+
+async function loadData() {
+  try {
+    const res = await fetch('./data.json', { cache: 'no-store' });
+    DATA = await res.json();
+  } catch (e) {
+    DATA = { categories: [], total_tools: 0, total_categories: 0 };
+  }
+  document.getElementById('console-out').innerHTML =
+    `<span class="stat">${DATA.total_tools}</span> tools indexed across <span class="stat">${DATA.total_categories}</span> categories. ready.`;
+  buildNav();
+  render();
+  setupScrollspy();
+}
+
+function buildNav() {
+  const items = DATA.categories.map(cat => {
+    const slug = slugify(cat.name);
+    return `<a class="sidebar-link" data-slug="${slug}" href="#${slug}"><span>${cat.name}</span><span class="count">${cat.tools.length}</span></a>`;
+  }).join('');
+  document.getElementById('sidebar-nav').innerHTML = items;
+  document.getElementById('drawer-nav').innerHTML = items;
+
+  // Clicking any nav link (sidebar or drawer) closes the drawer and lets
+  // the browser's native hash-jump + smooth-scroll (set on html) handle movement.
+  document.querySelectorAll('.sidebar-link').forEach(link => {
+    link.addEventListener('click', () => closeDrawer());
+  });
+}
+
+function matchesType(type, filter) {
+  if (filter === 'all') return true;
+  return type.toLowerCase().includes(filter.toLowerCase());
+}
+
+function render() {
+  const q = document.getElementById('search').value.trim().toLowerCase();
+  const container = document.getElementById('results');
+  container.innerHTML = '';
+  let shown = 0;
+
+  DATA.categories.forEach(cat => {
+    const tools = cat.tools.filter(t => {
+      if (!matchesType(t.type, activeFilter)) return false;
+      if (!q) return true;
+      const hay = (t.name + ' ' + t.description + ' ' + cat.name).toLowerCase();
+      return hay.includes(q);
+    });
+    if (tools.length === 0) return;
+
+    shown += tools.length;
+    const slug = slugify(cat.name);
+    const section = document.createElement('div');
+    section.className = 'category';
+    section.id = slug;
+    const isOss = t => t.type.toLowerCase().includes('open-source');
+    section.innerHTML = `
+      <h2>${cat.name} <span class="n">${tools.length} of ${cat.tools.length}</span></h2>
+      <div class="grid">
+        ${tools.map(t => `
+          <div class="tool ${isOss(t) ? 'oss' : 'commercial'}">
+            <div class="tool-top">
+              <div class="tool-main"><a href="${t.url}" target="_blank" rel="noopener">${t.name}</a></div>
+              <div class="tool-tag ${isOss(t) ? 'tag-oss' : 'tag-commercial'}">${t.type}</div>
+            </div>
+            <div class="tool-desc">${t.description}</div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+    container.appendChild(section);
+  });
+
+  document.getElementById('result-count').textContent = q || activeFilter !== 'all'
+    ? `${shown} match${shown === 1 ? '' : 'es'}`
+    : `${DATA.total_tools} tools`;
+
+  if (shown === 0) {
+    container.innerHTML = '<div class="empty">no matches — try a broader term, or <a href="https://github.com/neelshah2409/awesome-ai-sre-devops/blob/main/CONTRIBUTING.md" style="color:var(--amber)">suggest this tool</a></div>';
+  }
+}
+
+function setupScrollspy() {
+  const links = document.querySelectorAll('.sidebar-link');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        links.forEach(l => l.classList.toggle('active', l.dataset.slug === entry.target.id));
+      }
+    });
+  }, { rootMargin: '-30% 0px -60% 0px' });
+
+  // Re-observe every time categories are (re)rendered, since filtering
+  // rebuilds the DOM nodes.
+  const target = document.getElementById('results');
+  const mo = new MutationObserver(() => {
+    document.querySelectorAll('.category').forEach(sec => observer.observe(sec));
+  });
+  mo.observe(target, { childList: true });
+}
+
+function openDrawer(){ document.getElementById('drawer-overlay').classList.add('open'); }
+function closeDrawer(){ document.getElementById('drawer-overlay').classList.remove('open'); }
+
+document.getElementById('search').addEventListener('input', render);
+document.querySelectorAll('.chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    activeFilter = chip.dataset.filter;
+    render();
+  });
+});
+document.getElementById('cats-toggle').addEventListener('click', openDrawer);
+document.getElementById('drawer-close').addEventListener('click', closeDrawer);
+document.getElementById('drawer-overlay').addEventListener('click', (e) => {
+  if (e.target.id === 'drawer-overlay') closeDrawer();
+});
+
+window.addEventListener('scroll', () => {
+  document.getElementById('top-btn').classList.toggle('show', window.scrollY > 500);
+});
+document.getElementById('top-btn').addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+
+loadData();
+</script>
+
+</body>
+</html>
