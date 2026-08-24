@@ -82,7 +82,6 @@ AI-powered coding agents that write, review, and maintain infrastructure code �
 - **[Gemini Code Assist](https://cloud.google.com/gemini/docs/codeassist/overview)** — *Commercial (Google).* Google Cloud's coding assistant with native GCP awareness, the natural pick for GCP-heavy shops.
 - **[GitHub Copilot](https://github.com/features/copilot)** — *Commercial.* The most widely deployed AI pair programmer, with Copilot Workspace extending it to multi-file infra changes.
 - **[JetBrains AI](https://www.jetbrains.com/ai/)** — *Commercial.* Built into IntelliJ-based IDEs, context-aware completions for teams already standardized on JetBrains tooling.
-- **[Lovable](https://lovable.dev/)** — *Commercial.* Full-stack app builder with one-click deploy, useful for spinning up internal tools and dashboards quickly.
 - **[Crush](https://github.com/charmbracelet/crush)** — *Open-source (Charm).* Terminal coding agent supporting many model providers without losing session context between them.
 - **[Factory AI](https://factory.ai/)** — *Commercial.* Enterprise agent platform built for large codebases with local execution, web search, and MCP access baked in.
 - **[OpenCode](https://github.com/opencode-ai/opencode)** — *Open-source.* Go-based terminal agent with 140k+ stars supporting 75+ models across Claude, OpenAI, Gemini, and local providers.
@@ -232,7 +231,6 @@ AI tools purpose-built for cluster management, troubleshooting, and operations.
 - **[Falco](https://github.com/falcosecurity/falco)** — *Open-source (CNCF graduated).* Runtime threat detection for containers and Kubernetes.
 - **[GitGuardian](https://www.gitguardian.com/)** — *Commercial.* AI-powered secrets detection across Git repos, CI/CD, and Docker images.
 - **[Endor Labs](https://www.endorlabs.com/)** — *Commercial.* Identifies *reachable* vulnerabilities to cut false positives in supply-chain scanning.
-- **[Lacework](https://www.lacework.com/)** — *Commercial.* Behavioral AI detecting cloud-workload anomalies without hand-written rules.
 - **[MCP-Scan](https://labs.snyk.io/)** — *Open-source.* Audits Model Context Protocol servers for security issues before you connect an LLM to them.
 - **[Orca Security](https://orca.security/)** — *Commercial.* Agentless cloud security with AI-prioritized risk across workloads and identities.
 - **[Prisma Cloud](https://www.paloaltonetworks.com/prisma/cloud)** — *Commercial.* CNAPP with AI-driven vulnerability prioritization and compliance checks.
