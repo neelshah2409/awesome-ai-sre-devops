@@ -82,12 +82,6 @@
           "description": "Built into IntelliJ-based IDEs, context-aware completions for teams already standardized on JetBrains tooling."
         },
         {
-          "name": "Lovable",
-          "url": "https://lovable.dev/",
-          "type": "Commercial",
-          "description": "Full-stack app builder with one-click deploy, useful for spinning up internal tools and dashboards quickly."
-        },
-        {
           "name": "Crush",
           "url": "https://github.com/charmbracelet/crush",
           "type": "Open-source (Charm)",
@@ -903,12 +897,6 @@
           "url": "https://www.endorlabs.com/",
           "type": "Commercial",
           "description": "Identifies *reachable* vulnerabilities to cut false positives in supply-chain scanning."
-        },
-        {
-          "name": "Lacework",
-          "url": "https://www.lacework.com/",
-          "type": "Commercial",
-          "description": "Behavioral AI detecting cloud-workload anomalies without hand-written rules."
         },
         {
           "name": "MCP-Scan",
@@ -2543,6 +2531,6 @@
       ]
     }
   ],
-  "total_tools": 407,
+  "total_tools": 405,
   "total_categories": 20
 }
