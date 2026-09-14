@@ -834,12 +834,6 @@
           "description": "OpenTelemetry-native APM unifying logs/metrics/traces with native LLM-app observability."
         },
         {
-          "name": "Flip AI",
-          "url": "https://www.flip.ai/",
-          "type": "Commercial",
-          "description": "DevOps-specific LLM predicting incidents and generating RCAs across Datadog/Splunk/AppDynamics."
-        },
-        {
           "name": "Coralogix Olly",
           "url": "https://ollyhq.com/",
           "type": "Commercial",
@@ -2531,6 +2525,6 @@
       ]
     }
   ],
-  "total_tools": 405,
+  "total_tools": 404,
   "total_categories": 20
 }
