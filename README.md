@@ -218,7 +218,6 @@ AI tools purpose-built for cluster management, troubleshooting, and operations.
 - **[Apache SkyWalking](https://github.com/apache/skywalking)** — *Open-source.* Full-stack APM with distributed tracing and eBPF-powered Kubernetes monitoring.
 - **[Dash0](https://dash0.com/)** — *Commercial.* OpenTelemetry-native platform with specialized "Agent0" agents for SRE, cost, migration, and security.
 - **[SigNoz](https://github.com/SigNoz/signoz)** — *Open-source.* OpenTelemetry-native APM unifying logs/metrics/traces with native LLM-app observability.
-- **[Flip AI](https://www.flip.ai/)** — *Commercial.* DevOps-specific LLM predicting incidents and generating RCAs across Datadog/Splunk/AppDynamics.
 - **[Coralogix Olly](https://ollyhq.com/)** — *Commercial.* Autonomous agent correlating logs/metrics/traces with code-aware root cause analysis.
 - **[LogicMonitor Edwin AI](https://www.logicmonitor.com/edwin-ai)** — *Commercial.* Connects 3,000+ tools for correlation, RCA, and autonomous remediation.
 - **[New Relic SRE Agent](https://newrelic.com/platform/sre-agent)** — *Commercial.* AI-powered autonomous incident diagnosis across app and infra layers.
