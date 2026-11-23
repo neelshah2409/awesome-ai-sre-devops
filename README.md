@@ -545,6 +545,7 @@ Model Context Protocol servers give AI assistants (Claude, ChatGPT, Cursor) dire
 - **[CNCF Slack](https://slack.cncf.io/)** — The default hub for CNCF project discussion, including most AI-adjacent Sandbox/incubating projects on this list.
 - **[SRE Weekly](https://sreweekly.com/)** — Curated weekly SRE news and incident write-ups.
 - **[DevOps Weekly](https://www.devopsweekly.com/)** — Long-running weekly DevOps roundup.
+- **[AI SRE Weekly](https://medium.com/@aisreweekly)** — Weekly newsletter tracking the AI SRE category: vendor launches, funding, incident-automation research and what changed for on-call teams.
 
 ---
 
